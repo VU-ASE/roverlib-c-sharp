@@ -5,9 +5,9 @@ using QuickType;
 using Serilog;
 
 public class ServiceConfiguration{
-    private Dictionary<string, float> floatOptions = [];
-    private Dictionary<string, string> stringOptions = [];
-    private Dictionary<string, bool> tunable = [];
+    private readonly Dictionary<string, float> floatOptions = [];
+    private readonly Dictionary<string, string> stringOptions = [];
+    private readonly Dictionary<string, bool> tunable = [];
     private ReaderWriterLockSlim rwlock = new();
     private long lastUpdate = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 

@@ -26,3 +26,7 @@ lint:
 clean:
 	@echo "Cleaning..."
 	cd src && dotnet clean
+
+tests:
+	@echo "Running Sample..."
+	cd src && dotnet script /workspace/roverlib-c-sharp/sample.csx

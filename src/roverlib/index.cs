@@ -3,11 +3,13 @@ using QuickType;
 using Serilog;
 using Serilog.Enrichers.WithCaller;
 using System.Runtime.CompilerServices;
+using System.CommandLine;
+using System.CommandLine.Invocation;
 
 
 public static class Rover
 {
-    public static void Run(){
+    public static void Run(string[] args){
         SetUpLogging(true, "/workspace/roverlib-c-sharp/logs.txt", "controller");
     }
     
@@ -29,6 +31,24 @@ public static class Rover
         
         Log.Logger = temp.CreateLogger();
     }
+
+    // static private async int handleCL(string[] args){
+    //     var nameOption = new Option<string>(
+    //     "--name", 
+    //     description: "The name to use");
+
+    //     var rootCommand = new RootCommand("My tool");
+    //     rootCommand.AddOption(nameOption);
+
+    //     rootCommand.SetHandler((string name) =>
+    //     {
+    //         Roverlog.Info($"Name is {name}");
+    //     }, nameOption);
+
+    //     return await rootCommand.InvokeAsync(args);
+    // }
+
+
 }
 
 

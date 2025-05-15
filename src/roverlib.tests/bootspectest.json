@@ -7,11 +7,11 @@
             "streams": [
                 {
                     "name": "track_data",
-                    "address": "tcp://unix:7890"
+                    "address": "tcp://localhost:7882"
                 },
                 {
                     "name": "debug_info",
-                    "address": "tcp://unix:7891"
+                    "address": "tcp://localhost:7891"
                 }
             ]
         },
@@ -20,7 +20,7 @@
             "streams": [
                 {
                     "name": "location_data",
-                    "address": "tcp://unix:7892"
+                    "address": "tcp://localhost:7892"
                 }
             ]
         }
@@ -28,11 +28,11 @@
     "outputs": [
         {
             "name": "motor_movement",
-            "address": "tcp://unix:7882"
+            "address": "tcp://*:7882"
         },
         {
             "name": "sensor_data",
-            "address": "tcp://unix:7883"
+            "address": "tcp://*:7883"
         }
     ],
     "configuration": [
@@ -57,6 +57,6 @@
     ],
     "tuning": {
         "enabled": true,
-        "address": "tcp://unix:8829"
+        "address": "tcp://localhost:8829"
     }
 }

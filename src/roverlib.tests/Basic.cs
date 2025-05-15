@@ -3,6 +3,8 @@ using roverlib;
 using QuickType;
 using Xunit;
 using Xunit.Abstractions;
+using System.CommandLine;
+using System.CommandLine.Invocation;
 
 public class Basic
 {
@@ -16,6 +18,8 @@ public class Basic
     [Fact]
     public void FetchService()
     {
+        
+
         this.output.WriteLine("Testing Basic Service injection");
         string json = File.ReadAllText("../../../bootspectest.json");
         Environment.SetEnvironmentVariable("ASE_SERVICE", json);
@@ -47,12 +51,27 @@ public class Basic
         Assert.Equal("info", sc.GetStringSafe("log-level"));
 
 
-
-
-        Rover.Run();
-
     }
 
+    // public static class Program{
+    // public static void Main(string[] args){
+        
+    //     return;
+    // }
+
+    // private static void run(Service service, ServiceConfiguration configuration){
+
+    // }
+
+    // private static void onTerminate(){
+
+    // }
 
 
 }
+    
+
+
+
+
+

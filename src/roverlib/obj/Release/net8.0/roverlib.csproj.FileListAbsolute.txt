@@ -12,3 +12,4 @@
 /workspace/roverlib-c-sharp/src/roverlib/obj/Release/net8.0/ref/roverlib.dll
 /workspace/roverlib-c-sharp/src/roverlib/bin/Release/net8.0/roverlib.runtimeconfig.json
 /workspace/roverlib-c-sharp/src/roverlib/obj/Release/net8.0/roverlib.genruntimeconfig.cache
+/workspace/roverlib-c-sharp/src/roverlib/obj/Release/net8.0/roverlib.sourcelink.json
