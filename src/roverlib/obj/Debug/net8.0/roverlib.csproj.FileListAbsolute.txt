@@ -1,0 +1,14 @@
+/workspace/roverlib-c-sharp/src/roverlib/bin/Debug/net8.0/roverlib.deps.json
+/workspace/roverlib-c-sharp/src/roverlib/bin/Debug/net8.0/roverlib.dll
+/workspace/roverlib-c-sharp/src/roverlib/bin/Debug/net8.0/roverlib.pdb
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/roverlib.csproj.AssemblyReference.cache
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/roverlib.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/roverlib.AssemblyInfoInputs.cache
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/roverlib.AssemblyInfo.cs
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/roverlib.csproj.CoreCompileInputs.cache
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/roverlib.dll
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/refint/roverlib.dll
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/roverlib.pdb
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/ref/roverlib.dll
+/workspace/roverlib-c-sharp/src/roverlib/bin/Debug/net8.0/roverlib.runtimeconfig.json
+/workspace/roverlib-c-sharp/src/roverlib/obj/Debug/net8.0/roverlib.genruntimeconfig.cache
