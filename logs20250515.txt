@@ -1,1 +1,24 @@
 
+18:57 DBG [controller] sample.csx:19 > test
+19:35 DBG [controller] sample.csx:19 > test
+19:36 DBG [controller] sample.csx:19 > test
+19:37 DBG [controller] sample.csx:19 > test
+19:37 DBG [controller] sample.csx:19 > test
+19:38 DBG [controller] sample.csx:19 > test
+19:38 DBG [controller] sample.csx:19 > test
+19:39 DBG [controller] sample.csx:19 > test
+19:41 DBG [controller] sample.csx:19 > test
+19:42 DBG [controller] sample.csx:19 > test
+19:46 INF [controller] index.cs:89 > Listening for signals...
+19:52 INF [controller] index.cs:89 > Listening for signals...
+19:53 INF [controller] index.cs:86 > Listening for signals...
+19:53 WRN [controller] : > Signal received: ControlC
+19:53 INF [controller] index.cs:86 > Listening for signals...
+19:53 WRN [controller] : > Signal received: ControlC
+19:55 INF [controller] index.cs:86 > Listening for signals...
+19:55 WRN [controller] : > Signal received: ControlC
+19:56 INF [controller] index.cs:86 > Listening for signals...
+19:56 WRN [controller] index.cs:71 > Signal received: ControlC
+20:03 INF [controller] index.cs:85 > Listening for signals...
+20:03 WRN [controller] index.cs:70 > Signal received: ControlC
+20:03 WRN [controller] sample.csx:29 > terminating: ControlC

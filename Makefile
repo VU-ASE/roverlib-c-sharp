@@ -1,8 +1,3 @@
-# Makefile for C# project in src/
-
-SOLUTION = $(wildcard src/*.sln)
-PROJECTS = $(wildcard src/**/*.csproj)
-
 # Default target: build
 .PHONY: all
 all: build
@@ -27,6 +22,8 @@ clean:
 	@echo "Cleaning..."
 	cd src && dotnet clean
 
-tests:
+# Extra testing to run the sample file
+sample: build
 	@echo "Running Sample..."
-	cd src && dotnet script /workspace/roverlib-c-sharp/sample.csx
+	touch /workspace/roverlib-c-sharp/src/roverlib/sample.csx
+	cd src && dotnet script /workspace/roverlib-c-sharp/src/roverlib/sample.csx --debug --output /workspace/roverlib-c-sharp/logs.txt

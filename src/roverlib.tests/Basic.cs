@@ -5,6 +5,8 @@ using Xunit;
 using Xunit.Abstractions;
 using System.CommandLine;
 using System.CommandLine.Invocation;
+using System.Threading;
+using Rovercom = ProtobufMsgs;
 
 public class Basic
 {
@@ -18,12 +20,12 @@ public class Basic
     [Fact]
     public void FetchService()
     {
-        
+
 
         this.output.WriteLine("Testing Basic Service injection");
         string json = File.ReadAllText("../../../bootspectest.json");
         Environment.SetEnvironmentVariable("ASE_SERVICE", json);
-        
+
         Service service = Service.FromJson(Environment.GetEnvironmentVariable("ASE_SERVICE"));
 
         Assert.Equal("controller", service.Name);
@@ -37,6 +39,8 @@ public class Basic
         Assert.Equal(true, service.Tuning.Enabled);
 
         ServiceConfiguration sc = new ServiceConfiguration(service);
+
+        Rover.Run(null, null);
 
         Assert.Equal("debug", sc.GetString("log-level"));
         Assert.Equal("debug", sc.GetStringSafe("log-level"));
@@ -53,19 +57,64 @@ public class Basic
 
     }
 
-    // public static class Program{
-    // public static void Main(string[] args){
-        
-    //     return;
-    // }
+    // The following tests are not meant to pass, but are to check receiving/sending data indefinitely. Uncomment the return statements if you want these tests to pass 
+    [Fact]
+    public void Writing()
+    {
+        this.output.WriteLine("Testing Writing");
+        string json = File.ReadAllText("../../../bootspectest.json");
+        Environment.SetEnvironmentVariable("ASE_SERVICE", json);
 
-    // private static void run(Service service, ServiceConfiguration configuration){
+        Service service = Service.FromJson(Environment.GetEnvironmentVariable("ASE_SERVICE"));
+        ServiceConfiguration sc = new ServiceConfiguration(service);
 
-    // }
+        Rover.Run(null, null);
 
-    // private static void onTerminate(){
+        WriteStream ws = service.GetWriteStream("motor_movement");
+        //return
+        while (true)
+        {
+            Rovercom.SensorOutput so = new Rovercom.SensorOutput();
+            so.Status = 400;
+            so.RpmOuput = new Rovercom.RpmSensorOutput();
+            so.RpmOuput.LeftAngle = 2.0f;
+            // so.SpeedOutput = new Rovercom.SpeedSensorOutput();
+            // so.SpeedOutput.Rpm = 4;
 
-    // }
+            ws.Write(so);
+            // ws.WriteBytes(System.Text.Encoding.UTF8.GetBytes("hello"));
+
+            Roverlog.Info("writing");
+            Thread.Sleep(300);
+        }
+
+
+    }
+
+    [Fact]
+    public void Reading()
+    {
+        this.output.WriteLine("Testing Reading");
+        string json = File.ReadAllText("../../../bootspectest.json");
+        Environment.SetEnvironmentVariable("ASE_SERVICE", json);
+
+        Service service = Service.FromJson(Environment.GetEnvironmentVariable("ASE_SERVICE"));
+        ServiceConfiguration sc = new ServiceConfiguration(service);
+
+        Rover.Run(null, null);
+
+        ReadStream rs = service.GetReadStream("imaging", "track_data");
+        //return
+        while (true)
+        {
+            Rovercom.SensorOutput so = rs.Read();
+            Roverlog.Info($"incoming status: {so.Status}");
+            Roverlog.Info($"Incoming left angle: {so.RpmOuput.LeftAngle}");
+            // Roverlog.Info($"incoming speedoutput: {so.SpeedOutput.Rpm}");
+            // Roverlog.Info("incoming: " + System.Text.Encoding.UTF8.GetString(rs.ReadBytes()));
+            Thread.Sleep(300);
+        }
+    }
 
 
 }

@@ -20,8 +20,8 @@ public class ServiceStream
 
 public class WriteStream{
 
-    public ServiceStream stream;
-    WriteStream(ServiceStream s){
+    private ServiceStream stream;
+    public WriteStream(ServiceStream s){
         stream = s;
     }
 
@@ -80,7 +80,7 @@ public class WriteStream{
 
 public class ReadStream{
     private ServiceStream stream;
-    ReadStream(ServiceStream s){
+    public ReadStream(ServiceStream s){
         stream = s;
     }
 
@@ -135,7 +135,75 @@ public class ReadStream{
         return output;
     }
     
-}   
+}
+
+public static class ServiceExtend{
+    private readonly static Dictionary<string, WriteStream> WriteStreams = [];
+    private readonly static Dictionary<string, ReadStream> ReadStreams = [];
+
+    public static WriteStream GetWriteStream(this Service s, string name){
+        // Is this stream already handed out?
+        if(WriteStreams.ContainsKey(name)){
+            return WriteStreams[name];
+        }
+
+        // Does this stream exist?
+        for(int i = 0; i < s.Outputs.Length; i++){
+            var output = s.Outputs[i];
+            if(output.Name == name){
+                
+                // ZMQ wants to bind write streams to tcp://*:port addresses, so if roverd gave us a localhost, we need to change it to *
+                var address = output.Address.Replace("localhost", "*");
+
+                // Create a new stream
+                ServiceStream newStream = new ServiceStream(address);
+
+                WriteStream res = new WriteStream(newStream);
+                WriteStreams[name] = res;
+                return res;
+            }
+        }
+
+        Roverlog.Fatal($"Output stream {name} does not exist. Update your program code or service.yaml");
+        throw new Exception($"Output stream {name} does not exist. Update your program code or service.yaml");
+    }
+
+    public static ReadStream GetReadStream(this Service s, string service, string name){
+        string StreamName = $"{service}-{name}";
+
+        // Is this stream already handed out?
+        if(ReadStreams.ContainsKey(StreamName)){
+            return ReadStreams[StreamName];
+        }
+        
+        // Does this stream exist
+        for(int i = 0; i < s.Inputs.Length; i++){
+            var input = s.Inputs[i];
+            if(input.Service == service){
+                for(int j = 0; j < input.Streams.Length; j++){
+                    var stream = input.Streams[i];
+                    if(stream.Name == name){
+                        // Create a new stream
+                        ServiceStream newStream = new ServiceStream(stream.Address);
+
+                        ReadStream res = new ReadStream(newStream);
+                        ReadStreams[StreamName] = res;
+                        return res;
+                    }
+
+                }
+
+            }
+
+        }
+
+        Roverlog.Fatal($"Input stream {StreamName} does not exist. Update your program code or service.yaml");
+        throw new Exception($"Input stream {StreamName} does not exist. Update your program code or service.yaml");
+    }
+    
+}
+
+
 
 
 

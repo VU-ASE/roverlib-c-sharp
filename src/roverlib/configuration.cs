@@ -2,7 +2,7 @@ namespace roverlib;
 
 using System.Runtime.Intrinsics.X86;
 using QuickType;
-using Serilog;
+
 
 public class ServiceConfiguration{
     private readonly Dictionary<string, float> floatOptions = [];
