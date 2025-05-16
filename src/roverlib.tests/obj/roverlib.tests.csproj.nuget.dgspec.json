@@ -131,6 +131,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AsyncIO": {
+              "target": "Package",
+              "version": "[0.1.69, )"
+            },
             "Google.Protobuf": {
               "target": "Package",
               "version": "[3.25.1, )"

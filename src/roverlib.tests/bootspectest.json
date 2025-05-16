@@ -32,7 +32,7 @@
         },
         {
             "name": "sensor_data",
-            "address": "tcp://*:7883"
+            "address": "tcp://*:8829"
         }
     ],
     "configuration": [
@@ -45,7 +45,7 @@
         {
             "name": "speed",
             "type": "number",
-            "tunable": false,
+            "tunable": true,
             "value": 1.5
         },
         {

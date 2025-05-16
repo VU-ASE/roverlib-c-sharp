@@ -7,7 +7,9 @@ using System.CommandLine;
 using System.CommandLine.Invocation;
 using System.Threading;
 using Rovercom = ProtobufMsgs;
-
+using Google.Protobuf.WellKnownTypes;
+using Google.Protobuf;
+//
 public class Basic
 {
     private readonly ITestOutputHelper output;
@@ -114,6 +116,52 @@ public class Basic
             // Roverlog.Info("incoming: " + System.Text.Encoding.UTF8.GetString(rs.ReadBytes()));
             Thread.Sleep(300);
         }
+    }
+
+    [Fact]
+    public void Tuning()
+    {
+        string json = File.ReadAllText("/workspace/roverlib-c-sharp/src/roverlib.tests/bootspectest.json");
+        Environment.SetEnvironmentVariable("ASE_SERVICE", json);
+        string? json2 = Environment.GetEnvironmentVariable("ASE_SERVICE") ?? throw new Exception("No service definition found in environment variable ASE_SERVICE. Are you sure that this service is started by roverd?");
+        Service service = Service.FromJson(json2);
+
+        WriteStream ws = service.GetWriteStream("sensor_data");
+        Rovercom.TuningState.Types.Parameter s = new Rovercom.TuningState.Types.Parameter();
+        s.Number = new Rovercom.TuningState.Types.Parameter.Types.NumberParameter();
+        s.Number.Key = "speed";
+        s.Number.Value = 100;
+        
+        var tu = new Rovercom.TuningState();
+        tu.Timestamp = (ulong)DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        tu.DynamicParameters.Add(s);
+        //return
+        while (true)
+        {
+            Thread.Sleep(100);
+            ws.WriteBytes(tu.ToByteArray());
+        }
+        
+        
+    //         time.sleep(2)
+        // context = zmq.Context()
+        // socket = context.socket(zmq.PUB)
+        // socket.bind("tcp://*:8829")
+
+        // assert abs(configuration.GetFloatSafe("speed") - 1.5) < 0.01
+
+        // tuning = rovercom.TuningState(timestamp=int(time.time() * 1000), dynamic_parameters=[
+        //     rovercom.TuningStateParameter(number=rovercom.TuningStateParameterNumberParameter(key="speed",value=1.1))
+        //     ]
+        // ).SerializeToString()
+
+        // for i in range(5):
+        //     socket.send(tuning)
+        //     time.sleep(0.05)
+
+
+        // assert abs(configuration.GetFloatSafe("speed") - 1.1) < 0.01
+
     }
 
 

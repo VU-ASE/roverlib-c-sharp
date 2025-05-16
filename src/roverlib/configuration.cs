@@ -9,7 +9,7 @@ public class ServiceConfiguration{
     private readonly Dictionary<string, string> stringOptions = [];
     private readonly Dictionary<string, bool> tunable = [];
     private ReaderWriterLockSlim rwlock = new();
-    private long lastUpdate = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+    public long lastUpdate = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
     public ServiceConfiguration(Service service){
         for(int i = 0; i < service.Configuration.Length; i++){

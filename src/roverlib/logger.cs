@@ -2,6 +2,7 @@ namespace roverlib;
 using Serilog;
 using System.Runtime.CompilerServices;
 
+// Custom logger to include file and line
 public static class Roverlog
 {
     public static void Debug(string message,
