@@ -15,18 +15,6 @@
           }
         }
       },
-      "Ben.Demystifier/0.4.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Metadata": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/Ben.Demystifier.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/Ben.Demystifier.dll": {}
-        }
-      },
       "Google.Protobuf/3.25.1": {
         "type": "package",
         "dependencies": {
@@ -89,55 +77,6 @@
           "lib/netstandard2.0/Serilog.dll": {}
         }
       },
-      "Serilog.Enrichers.Environment/3.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Serilog": "4.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Serilog.Enrichers.Environment.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Serilog.Enrichers.Environment.dll": {}
-        }
-      },
-      "Serilog.Enrichers.Process/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Serilog": "4.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Serilog.Enrichers.Process.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Serilog.Enrichers.Process.dll": {}
-        }
-      },
-      "Serilog.Enrichers.Thread/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Serilog": "4.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Serilog.Enrichers.Thread.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Serilog.Enrichers.Thread.dll": {}
-        }
-      },
-      "Serilog.Enrichers.WithCaller/1.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Ben.Demystifier": "0.4.1",
-          "Serilog": "4.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.1/Serilog.Enrichers.WithCaller.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/Serilog.Enrichers.WithCaller.dll": {}
-        }
-      },
       "Serilog.Sinks.Console/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -169,18 +108,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {}
-        }
-      },
-      "System.Collections.Immutable/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         }
       },
       "System.CommandLine/2.0.0-beta4.22272.1": {
@@ -276,18 +203,6 @@
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
         }
       },
-      "System.Reflection.Metadata/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections.Immutable": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
-        }
-      },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
@@ -340,74 +255,6 @@
         "runtime": {
           "lib/netstandard2.1/System.Threading.Channels.dll": {}
         }
-      },
-      "xunit/2.9.3": {
-        "type": "package",
-        "dependencies": {
-          "xunit.analyzers": "1.18.0",
-          "xunit.assert": "2.9.3",
-          "xunit.core": "[2.9.3]"
-        }
-      },
-      "xunit.abstractions/2.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/xunit.abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/xunit.abstractions.dll": {}
-        }
-      },
-      "xunit.analyzers/1.18.0": {
-        "type": "package"
-      },
-      "xunit.assert/2.9.3": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.1/xunit.assert.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/xunit.assert.dll": {}
-        }
-      },
-      "xunit.core/2.9.3": {
-        "type": "package",
-        "dependencies": {
-          "xunit.extensibility.core": "[2.9.3]",
-          "xunit.extensibility.execution": "[2.9.3]"
-        },
-        "build": {
-          "build/xunit.core.props": {},
-          "build/xunit.core.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/xunit.core.props": {},
-          "buildMultiTargeting/xunit.core.targets": {}
-        }
-      },
-      "xunit.extensibility.core/2.9.3": {
-        "type": "package",
-        "dependencies": {
-          "xunit.abstractions": "2.0.3"
-        },
-        "compile": {
-          "lib/netstandard1.1/xunit.core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/xunit.core.dll": {}
-        }
-      },
-      "xunit.extensibility.execution/2.9.3": {
-        "type": "package",
-        "dependencies": {
-          "xunit.extensibility.core": "[2.9.3]"
-        },
-        "compile": {
-          "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
-        }
       }
     }
   },
@@ -427,22 +274,6 @@
         "lib/netstandard1.3/AsyncIO.pdb",
         "lib/netstandard2.0/AsyncIO.dll",
         "lib/netstandard2.0/AsyncIO.pdb"
-      ]
-    },
-    "Ben.Demystifier/0.4.1": {
-      "sha512": "axFeEMfmEORy3ipAzOXG/lE+KcNptRbei3F0C4kQCdeiQtW+qJW90K5iIovITGrdLt8AjhNCwk5qLSX9/rFpoA==",
-      "type": "package",
-      "path": "ben.demystifier/0.4.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ben.demystifier.0.4.1.nupkg.sha512",
-        "ben.demystifier.nuspec",
-        "icon.png",
-        "lib/net45/Ben.Demystifier.dll",
-        "lib/netstandard2.0/Ben.Demystifier.dll",
-        "lib/netstandard2.1/Ben.Demystifier.dll",
-        "readme.md"
       ]
     },
     "Google.Protobuf/3.25.1": {
@@ -535,76 +366,6 @@
         "serilog.nuspec"
       ]
     },
-    "Serilog.Enrichers.Environment/3.0.1": {
-      "sha512": "9BqCE4C9FF+/rJb/CsQwe7oVf44xqkOvMwX//CUxvUR25lFL4tSS6iuxE5eW07quby1BAyAEP+vM6TWsnT3iqw==",
-      "type": "package",
-      "path": "serilog.enrichers.environment/3.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/Serilog.Enrichers.Environment.dll",
-        "lib/net471/Serilog.Enrichers.Environment.dll",
-        "lib/net6.0/Serilog.Enrichers.Environment.dll",
-        "lib/net8.0/Serilog.Enrichers.Environment.dll",
-        "lib/netstandard2.0/Serilog.Enrichers.Environment.dll",
-        "serilog-enricher-nuget.png",
-        "serilog.enrichers.environment.3.0.1.nupkg.sha512",
-        "serilog.enrichers.environment.nuspec"
-      ]
-    },
-    "Serilog.Enrichers.Process/3.0.0": {
-      "sha512": "/wPYz2PDCJGSHNI+Z0PAacZvrgZgrGduWqLXeC2wvW6pgGM/Bi45JrKy887MRcRPHIZVU0LAlkmJ7TkByC0boQ==",
-      "type": "package",
-      "path": "serilog.enrichers.process/3.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/Serilog.Enrichers.Process.dll",
-        "lib/net471/Serilog.Enrichers.Process.dll",
-        "lib/net6.0/Serilog.Enrichers.Process.dll",
-        "lib/net8.0/Serilog.Enrichers.Process.dll",
-        "lib/netstandard2.0/Serilog.Enrichers.Process.dll",
-        "serilog-enricher-nuget.png",
-        "serilog.enrichers.process.3.0.0.nupkg.sha512",
-        "serilog.enrichers.process.nuspec"
-      ]
-    },
-    "Serilog.Enrichers.Thread/4.0.0": {
-      "sha512": "C7BK25a1rhUyr+Tp+1BYcVlBJq7M2VCHlIgnwoIUVJcicM9jYcvQK18+OeHiXw7uLPSjqWxJIp1EfaZ/RGmEwA==",
-      "type": "package",
-      "path": "serilog.enrichers.thread/4.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/Serilog.Enrichers.Thread.dll",
-        "lib/net471/Serilog.Enrichers.Thread.dll",
-        "lib/net6.0/Serilog.Enrichers.Thread.dll",
-        "lib/net8.0/Serilog.Enrichers.Thread.dll",
-        "lib/netstandard2.0/Serilog.Enrichers.Thread.dll",
-        "serilog-enricher-nuget.png",
-        "serilog.enrichers.thread.4.0.0.nupkg.sha512",
-        "serilog.enrichers.thread.nuspec"
-      ]
-    },
-    "Serilog.Enrichers.WithCaller/1.3.0": {
-      "sha512": "Vbuoa7ASXCI+ssdKaCfnQgnsWIyVXlc5g+VZi4oZP2hSHStU4L7n9TTuiQR8zGS75jz4qIJoJGtoSZxzn537lQ==",
-      "type": "package",
-      "path": "serilog.enrichers.withcaller/1.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "MIT License.txt",
-        "README.md",
-        "icon.png",
-        "lib/netstandard2.0/Serilog.Enrichers.WithCaller.dll",
-        "lib/netstandard2.1/Serilog.Enrichers.WithCaller.dll",
-        "serilog.enrichers.withcaller.1.3.0.nupkg.sha512",
-        "serilog.enrichers.withcaller.nuspec"
-      ]
-    },
     "Serilog.Sinks.Console/6.0.0": {
       "sha512": "fQGWqVMClCP2yEyTXPIinSr5c+CBGUvBybPxjAGcf7ctDhadFhrQw03Mv8rJ07/wR5PDfFjewf2LimvXCDzpbA==",
       "type": "package",
@@ -663,27 +424,6 @@
         "ref/uap10.0.16299/_._",
         "system.buffers.4.5.1.nupkg.sha512",
         "system.buffers.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Collections.Immutable/5.0.0": {
-      "sha512": "FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
-      "type": "package",
-      "path": "system.collections.immutable/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Collections.Immutable.dll",
-        "lib/netstandard1.0/System.Collections.Immutable.dll",
-        "lib/netstandard1.3/System.Collections.Immutable.dll",
-        "lib/netstandard2.0/System.Collections.Immutable.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
-        "system.collections.immutable.5.0.0.nupkg.sha512",
-        "system.collections.immutable.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -807,26 +547,6 @@
         "ref/xamarinwatchos10/_._",
         "system.numerics.vectors.4.4.0.nupkg.sha512",
         "system.numerics.vectors.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Reflection.Metadata/5.0.0": {
-      "sha512": "5NecZgXktdGg34rh1OenY1rFNDCI8xSjFr+Z4OU4cU06AQHUdRnIIEeWENu3Wl4YowbzkymAIMvi3WyK9U53pQ==",
-      "type": "package",
-      "path": "system.reflection.metadata/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Reflection.Metadata.dll",
-        "lib/netstandard1.1/System.Reflection.Metadata.dll",
-        "lib/netstandard2.0/System.Reflection.Metadata.dll",
-        "lib/portable-net45+win8/System.Reflection.Metadata.dll",
-        "system.reflection.metadata.5.0.0.nupkg.sha512",
-        "system.reflection.metadata.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -975,116 +695,6 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "xunit/2.9.3": {
-      "sha512": "TlXQBinK35LpOPKHAqbLY4xlEen9TBafjs0V5KnA4wZsoQLQJiirCR4CbIXvOH8NzkW4YeJKP5P/Bnrodm0h9Q==",
-      "type": "package",
-      "path": "xunit/2.9.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_content/README.md",
-        "_content/logo-128-transparent.png",
-        "xunit.2.9.3.nupkg.sha512",
-        "xunit.nuspec"
-      ]
-    },
-    "xunit.abstractions/2.0.3": {
-      "sha512": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
-      "type": "package",
-      "path": "xunit.abstractions/2.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/xunit.abstractions.dll",
-        "lib/netstandard1.0/xunit.abstractions.dll",
-        "lib/netstandard2.0/xunit.abstractions.dll",
-        "xunit.abstractions.2.0.3.nupkg.sha512",
-        "xunit.abstractions.nuspec"
-      ]
-    },
-    "xunit.analyzers/1.18.0": {
-      "sha512": "OtFMHN8yqIcYP9wcVIgJrq01AfTxijjAqVDy/WeQVSyrDC1RzBWeQPztL49DN2syXRah8TYnfvk035s7L95EZQ==",
-      "type": "package",
-      "path": "xunit.analyzers/1.18.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_content/README.md",
-        "_content/logo-128-transparent.png",
-        "analyzers/dotnet/cs/xunit.analyzers.dll",
-        "analyzers/dotnet/cs/xunit.analyzers.fixes.dll",
-        "tools/install.ps1",
-        "tools/uninstall.ps1",
-        "xunit.analyzers.1.18.0.nupkg.sha512",
-        "xunit.analyzers.nuspec"
-      ]
-    },
-    "xunit.assert/2.9.3": {
-      "sha512": "/Kq28fCE7MjOV42YLVRAJzRF0WmEqsmflm0cfpMjGtzQ2lR5mYVj1/i0Y8uDAOLczkL3/jArrwehfMD0YogMAA==",
-      "type": "package",
-      "path": "xunit.assert/2.9.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_content/README.md",
-        "_content/logo-128-transparent.png",
-        "lib/net6.0/xunit.assert.dll",
-        "lib/netstandard1.1/xunit.assert.dll",
-        "xunit.assert.2.9.3.nupkg.sha512",
-        "xunit.assert.nuspec"
-      ]
-    },
-    "xunit.core/2.9.3": {
-      "sha512": "BiAEvqGvyme19wE0wTKdADH+NloYqikiU0mcnmiNyXaF9HyHmE6sr/3DC5vnBkgsWaE6yPyWszKSPSApWdRVeQ==",
-      "type": "package",
-      "path": "xunit.core/2.9.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_content/README.md",
-        "_content/logo-128-transparent.png",
-        "build/xunit.core.props",
-        "build/xunit.core.targets",
-        "buildMultiTargeting/xunit.core.props",
-        "buildMultiTargeting/xunit.core.targets",
-        "xunit.core.2.9.3.nupkg.sha512",
-        "xunit.core.nuspec"
-      ]
-    },
-    "xunit.extensibility.core/2.9.3": {
-      "sha512": "kf3si0YTn2a8J8eZNb+zFpwfoyvIrQ7ivNk5ZYA5yuYk1bEtMe4DxJ2CF/qsRgmEnDr7MnW1mxylBaHTZ4qErA==",
-      "type": "package",
-      "path": "xunit.extensibility.core/2.9.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_content/README.md",
-        "_content/logo-128-transparent.png",
-        "lib/net452/xunit.core.dll",
-        "lib/net452/xunit.core.dll.tdnet",
-        "lib/net452/xunit.runner.tdnet.dll",
-        "lib/net452/xunit.runner.utility.net452.dll",
-        "lib/netstandard1.1/xunit.core.dll",
-        "xunit.extensibility.core.2.9.3.nupkg.sha512",
-        "xunit.extensibility.core.nuspec"
-      ]
-    },
-    "xunit.extensibility.execution/2.9.3": {
-      "sha512": "yMb6vMESlSrE3Wfj7V6cjQ3S4TXdXpRqYeNEI3zsX31uTsGMJjEw6oD5F5u1cHnMptjhEECnmZSsPxB6ChZHDQ==",
-      "type": "package",
-      "path": "xunit.extensibility.execution/2.9.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_content/README.md",
-        "_content/logo-128-transparent.png",
-        "lib/net452/xunit.execution.desktop.dll",
-        "lib/netstandard1.1/xunit.execution.dotnet.dll",
-        "xunit.extensibility.execution.2.9.3.nupkg.sha512",
-        "xunit.extensibility.execution.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1094,14 +704,9 @@
       "NetMQ >= 4.0.1.15",
       "Newtonsoft.Json >= 13.0.3",
       "Serilog >= 4.2.0",
-      "Serilog.Enrichers.Environment >= 3.0.1",
-      "Serilog.Enrichers.Process >= 3.0.0",
-      "Serilog.Enrichers.Thread >= 4.0.0",
-      "Serilog.Enrichers.WithCaller >= 1.3.0",
       "Serilog.Sinks.Console >= 6.0.0",
       "Serilog.Sinks.File >= 7.0.0",
-      "System.CommandLine >= 2.0.0-beta4.22272.1",
-      "xunit >= 2.9.3"
+      "System.CommandLine >= 2.0.0-beta4.22272.1"
     ]
   },
   "packageFolders": {
@@ -1166,22 +771,6 @@
             "target": "Package",
             "version": "[4.2.0, )"
           },
-          "Serilog.Enrichers.Environment": {
-            "target": "Package",
-            "version": "[3.0.1, )"
-          },
-          "Serilog.Enrichers.Process": {
-            "target": "Package",
-            "version": "[3.0.0, )"
-          },
-          "Serilog.Enrichers.Thread": {
-            "target": "Package",
-            "version": "[4.0.0, )"
-          },
-          "Serilog.Enrichers.WithCaller": {
-            "target": "Package",
-            "version": "[1.3.0, )"
-          },
           "Serilog.Sinks.Console": {
             "target": "Package",
             "version": "[6.0.0, )"
@@ -1193,10 +782,6 @@
           "System.CommandLine": {
             "target": "Package",
             "version": "[2.0.0-beta4.22272.1, )"
-          },
-          "xunit": {
-            "target": "Package",
-            "version": "[2.9.3, )"
           }
         },
         "imports": [

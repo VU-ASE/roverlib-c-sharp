@@ -73,7 +73,7 @@ public class Basic
         Rover.Run(null, null);
 
         WriteStream ws = service.GetWriteStream("motor_movement");
-        //return
+        return;
         while (true)
         {
             Rovercom.SensorOutput so = new Rovercom.SensorOutput();
@@ -106,7 +106,7 @@ public class Basic
         Rover.Run(null, null);
 
         ReadStream rs = service.GetReadStream("imaging", "track_data");
-        //return
+        return;
         while (true)
         {
             Rovercom.SensorOutput so = rs.Read();
@@ -135,7 +135,7 @@ public class Basic
         var tu = new Rovercom.TuningState();
         tu.Timestamp = (ulong)DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         tu.DynamicParameters.Add(s);
-        //return
+        return;
         while (true)
         {
             Thread.Sleep(100);

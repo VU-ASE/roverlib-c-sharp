@@ -15,18 +15,6 @@
           }
         }
       },
-      "Ben.Demystifier/0.4.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Metadata": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/Ben.Demystifier.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/Ben.Demystifier.dll": {}
-        }
-      },
       "coverlet.collector/6.0.0": {
         "type": "package",
         "build": {
@@ -388,55 +376,6 @@
           "lib/net8.0/Serilog.dll": {}
         }
       },
-      "Serilog.Enrichers.Environment/3.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Serilog": "4.0.0"
-        },
-        "compile": {
-          "lib/net8.0/Serilog.Enrichers.Environment.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/Serilog.Enrichers.Environment.dll": {}
-        }
-      },
-      "Serilog.Enrichers.Process/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Serilog": "4.0.0"
-        },
-        "compile": {
-          "lib/net8.0/Serilog.Enrichers.Process.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/Serilog.Enrichers.Process.dll": {}
-        }
-      },
-      "Serilog.Enrichers.Thread/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Serilog": "4.0.0"
-        },
-        "compile": {
-          "lib/net8.0/Serilog.Enrichers.Thread.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/Serilog.Enrichers.Thread.dll": {}
-        }
-      },
-      "Serilog.Enrichers.WithCaller/1.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Ben.Demystifier": "0.4.1",
-          "Serilog": "4.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.1/Serilog.Enrichers.WithCaller.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/Serilog.Enrichers.WithCaller.dll": {}
-        }
-      },
       "Serilog.Sinks.Console/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -515,7 +454,7 @@
           }
         }
       },
-      "System.Reflection.Metadata/5.0.0": {
+      "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
@@ -711,14 +650,9 @@
           "NetMQ": "4.0.1.15",
           "Newtonsoft.Json": "13.0.3",
           "Serilog": "4.2.0",
-          "Serilog.Enrichers.Environment": "3.0.1",
-          "Serilog.Enrichers.Process": "3.0.0",
-          "Serilog.Enrichers.Thread": "4.0.0",
-          "Serilog.Enrichers.WithCaller": "1.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
-          "System.CommandLine": "2.0.0-beta4.22272.1",
-          "xunit": "2.9.3"
+          "System.CommandLine": "2.0.0-beta4.22272.1"
         },
         "compile": {
           "bin/placeholder/roverlib.dll": {}
@@ -745,22 +679,6 @@
         "lib/netstandard1.3/AsyncIO.pdb",
         "lib/netstandard2.0/AsyncIO.dll",
         "lib/netstandard2.0/AsyncIO.pdb"
-      ]
-    },
-    "Ben.Demystifier/0.4.1": {
-      "sha512": "axFeEMfmEORy3ipAzOXG/lE+KcNptRbei3F0C4kQCdeiQtW+qJW90K5iIovITGrdLt8AjhNCwk5qLSX9/rFpoA==",
-      "type": "package",
-      "path": "ben.demystifier/0.4.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ben.demystifier.0.4.1.nupkg.sha512",
-        "ben.demystifier.nuspec",
-        "icon.png",
-        "lib/net45/Ben.Demystifier.dll",
-        "lib/netstandard2.0/Ben.Demystifier.dll",
-        "lib/netstandard2.1/Ben.Demystifier.dll",
-        "readme.md"
       ]
     },
     "coverlet.collector/6.0.0": {
@@ -1196,76 +1114,6 @@
         "serilog.nuspec"
       ]
     },
-    "Serilog.Enrichers.Environment/3.0.1": {
-      "sha512": "9BqCE4C9FF+/rJb/CsQwe7oVf44xqkOvMwX//CUxvUR25lFL4tSS6iuxE5eW07quby1BAyAEP+vM6TWsnT3iqw==",
-      "type": "package",
-      "path": "serilog.enrichers.environment/3.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/Serilog.Enrichers.Environment.dll",
-        "lib/net471/Serilog.Enrichers.Environment.dll",
-        "lib/net6.0/Serilog.Enrichers.Environment.dll",
-        "lib/net8.0/Serilog.Enrichers.Environment.dll",
-        "lib/netstandard2.0/Serilog.Enrichers.Environment.dll",
-        "serilog-enricher-nuget.png",
-        "serilog.enrichers.environment.3.0.1.nupkg.sha512",
-        "serilog.enrichers.environment.nuspec"
-      ]
-    },
-    "Serilog.Enrichers.Process/3.0.0": {
-      "sha512": "/wPYz2PDCJGSHNI+Z0PAacZvrgZgrGduWqLXeC2wvW6pgGM/Bi45JrKy887MRcRPHIZVU0LAlkmJ7TkByC0boQ==",
-      "type": "package",
-      "path": "serilog.enrichers.process/3.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/Serilog.Enrichers.Process.dll",
-        "lib/net471/Serilog.Enrichers.Process.dll",
-        "lib/net6.0/Serilog.Enrichers.Process.dll",
-        "lib/net8.0/Serilog.Enrichers.Process.dll",
-        "lib/netstandard2.0/Serilog.Enrichers.Process.dll",
-        "serilog-enricher-nuget.png",
-        "serilog.enrichers.process.3.0.0.nupkg.sha512",
-        "serilog.enrichers.process.nuspec"
-      ]
-    },
-    "Serilog.Enrichers.Thread/4.0.0": {
-      "sha512": "C7BK25a1rhUyr+Tp+1BYcVlBJq7M2VCHlIgnwoIUVJcicM9jYcvQK18+OeHiXw7uLPSjqWxJIp1EfaZ/RGmEwA==",
-      "type": "package",
-      "path": "serilog.enrichers.thread/4.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/Serilog.Enrichers.Thread.dll",
-        "lib/net471/Serilog.Enrichers.Thread.dll",
-        "lib/net6.0/Serilog.Enrichers.Thread.dll",
-        "lib/net8.0/Serilog.Enrichers.Thread.dll",
-        "lib/netstandard2.0/Serilog.Enrichers.Thread.dll",
-        "serilog-enricher-nuget.png",
-        "serilog.enrichers.thread.4.0.0.nupkg.sha512",
-        "serilog.enrichers.thread.nuspec"
-      ]
-    },
-    "Serilog.Enrichers.WithCaller/1.3.0": {
-      "sha512": "Vbuoa7ASXCI+ssdKaCfnQgnsWIyVXlc5g+VZi4oZP2hSHStU4L7n9TTuiQR8zGS75jz4qIJoJGtoSZxzn537lQ==",
-      "type": "package",
-      "path": "serilog.enrichers.withcaller/1.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "MIT License.txt",
-        "README.md",
-        "icon.png",
-        "lib/netstandard2.0/Serilog.Enrichers.WithCaller.dll",
-        "lib/netstandard2.1/Serilog.Enrichers.WithCaller.dll",
-        "serilog.enrichers.withcaller.1.3.0.nupkg.sha512",
-        "serilog.enrichers.withcaller.nuspec"
-      ]
-    },
     "Serilog.Sinks.Console/6.0.0": {
       "sha512": "fQGWqVMClCP2yEyTXPIinSr5c+CBGUvBybPxjAGcf7ctDhadFhrQw03Mv8rJ07/wR5PDfFjewf2LimvXCDzpbA==",
       "type": "package",
@@ -1345,21 +1193,20 @@
         "system.commandline.nuspec"
       ]
     },
-    "System.Reflection.Metadata/5.0.0": {
-      "sha512": "5NecZgXktdGg34rh1OenY1rFNDCI8xSjFr+Z4OU4cU06AQHUdRnIIEeWENu3Wl4YowbzkymAIMvi3WyK9U53pQ==",
+    "System.Reflection.Metadata/1.6.0": {
+      "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
-      "path": "system.reflection.metadata/5.0.0",
+      "path": "system.reflection.metadata/1.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Reflection.Metadata.dll",
         "lib/netstandard1.1/System.Reflection.Metadata.dll",
         "lib/netstandard2.0/System.Reflection.Metadata.dll",
         "lib/portable-net45+win8/System.Reflection.Metadata.dll",
-        "system.reflection.metadata.5.0.0.nupkg.sha512",
+        "lib/portable-net45+win8/System.Reflection.Metadata.xml",
+        "system.reflection.metadata.1.6.0.nupkg.sha512",
         "system.reflection.metadata.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"

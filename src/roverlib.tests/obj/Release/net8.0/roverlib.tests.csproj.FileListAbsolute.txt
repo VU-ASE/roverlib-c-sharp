@@ -100,12 +100,7 @@
 /workspace/roverlib-c-sharp/src/roverlib.tests/obj/Release/net8.0/roverlib.tests.genruntimeconfig.cache
 /workspace/roverlib-c-sharp/src/roverlib.tests/obj/Release/net8.0/ref/roverlib.tests.dll
 /workspace/roverlib-c-sharp/src/roverlib.tests/bin/Release/net8.0/Google.Protobuf.dll
-/workspace/roverlib-c-sharp/src/roverlib.tests/bin/Release/net8.0/Ben.Demystifier.dll
 /workspace/roverlib-c-sharp/src/roverlib.tests/bin/Release/net8.0/Serilog.dll
-/workspace/roverlib-c-sharp/src/roverlib.tests/bin/Release/net8.0/Serilog.Enrichers.Environment.dll
-/workspace/roverlib-c-sharp/src/roverlib.tests/bin/Release/net8.0/Serilog.Enrichers.Process.dll
-/workspace/roverlib-c-sharp/src/roverlib.tests/bin/Release/net8.0/Serilog.Enrichers.Thread.dll
-/workspace/roverlib-c-sharp/src/roverlib.tests/bin/Release/net8.0/Serilog.Enrichers.WithCaller.dll
 /workspace/roverlib-c-sharp/src/roverlib.tests/bin/Release/net8.0/Serilog.Sinks.Console.dll
 /workspace/roverlib-c-sharp/src/roverlib.tests/bin/Release/net8.0/Serilog.Sinks.File.dll
 /workspace/roverlib-c-sharp/src/roverlib.tests/obj/Release/net8.0/roverlib.tests.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("roverlib.tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f4d0f5f5022f0c923bae3a3542ef03a7b97dcb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c75bffc34457d66f749de444b8baa45ad8c6e090")]
 [assembly: System.Reflection.AssemblyProductAttribute("roverlib.tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("roverlib.tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

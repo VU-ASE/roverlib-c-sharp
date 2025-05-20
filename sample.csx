@@ -2,16 +2,10 @@
 #r "/root/.nuget/packages/serilog.sinks.console/6.0.0/lib/netstandard2.0/Serilog.Sinks.Console.dll"
 #r "/root/.nuget/packages/serilog.sinks.file/7.0.0/lib/netstandard2.0/Serilog.Sinks.File.dll"
 #r "/root/.nuget/packages/netmq/4.0.1.15/lib/netstandard2.1/NetMQ.dll"
-#r "/root/.nuget/packages/asyncio/0.1.69/lib/netstandard2.0/AsyncIO.dll"
 
 using roverlib;
-using System;
 using QuickType;
-using Serilog;
-using Serilog.Sinks.SystemConsole;
-using Serilog.Sinks.File;
-using NetMQ;
-using NetMQ.Sockets;
+
 using Rovercom = ProtobufMsgs;
 
 public static class RoverService
@@ -26,6 +20,7 @@ public static class RoverService
         so.Status = 400;
         so.RpmOuput = new Rovercom.RpmSensorOutput();
         so.RpmOuput.LeftAngle = 2.0f;
+
 
         ws.Write(so);
         Roverlog.Info("written");

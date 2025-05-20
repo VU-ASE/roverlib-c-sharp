@@ -115,3 +115,81 @@
 11:50 INF [controller] sample.csx:31 > written
 11:50 WRN [controller] index.cs:85 > Signal received: ControlC
 11:50 WRN [controller] sample.csx:41 > terminating: ControlC
+11:51 INF [controller] index.cs:101 > Listening for signals...
+11:51 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+11:51 INF [controller] sample.csx:31 > written
+11:51 INF [controller] index.cs:137 > Waiting for new tuning values
+11:51 WRN [controller] index.cs:85 > Signal received: ControlC
+11:51 WRN [controller] sample.csx:41 > terminating: ControlC
+11:51 INF [controller] index.cs:101 > Listening for signals...
+11:51 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+11:51 INF [controller] index.cs:137 > Waiting for new tuning values
+11:51 INF [controller] sample.csx:31 > written
+11:51 WRN [controller] index.cs:85 > Signal received: ControlC
+11:51 WRN [controller] sample.csx:41 > terminating: ControlC
+11:53 INF [controller] index.cs:101 > Listening for signals...
+11:53 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+11:53 INF [controller] index.cs:137 > Waiting for new tuning values
+11:53 INF [controller] sample.csx:31 > written
+11:53 WRN [controller] index.cs:85 > Signal received: ControlC
+11:53 WRN [controller] sample.csx:41 > terminating: ControlC
+11:57 INF [controller] index.cs:101 > Listening for signals...
+11:57 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+11:57 INF [controller] index.cs:137 > Waiting for new tuning values
+11:57 INF [controller] sample.csx:26 > written
+11:57 WRN [controller] index.cs:85 > Signal received: ControlC
+11:57 WRN [controller] sample.csx:36 > terminating: ControlC
+12:00 INF [controller] index.cs:101 > Listening for signals...
+12:00 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+12:00 INF [controller] sample.csx:26 > written
+12:00 INF [controller] index.cs:137 > Waiting for new tuning values
+12:00 WRN [controller] index.cs:85 > Signal received: ControlC
+12:00 WRN [controller] sample.csx:36 > terminating: ControlC
+12:00 INF [controller] index.cs:101 > Listening for signals...
+12:00 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+12:00 INF [controller] sample.csx:26 > written
+12:00 INF [controller] index.cs:137 > Waiting for new tuning values
+12:00 WRN [controller] index.cs:85 > Signal received: ControlC
+12:00 WRN [controller] sample.csx:36 > terminating: ControlC
+12:00 INF [controller] index.cs:101 > Listening for signals...
+12:00 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+12:00 INF [controller] index.cs:137 > Waiting for new tuning values
+12:00 INF [controller] sample.csx:26 > written
+12:01 WRN [controller] index.cs:85 > Signal received: ControlC
+12:01 WRN [controller] sample.csx:36 > terminating: ControlC
+12:02 INF [controller] index.cs:101 > Listening for signals...
+12:02 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+12:02 INF [controller] index.cs:137 > Waiting for new tuning values
+12:02 INF [controller] sample.csx:26 > written
+12:02 WRN [controller] index.cs:85 > Signal received: ControlC
+12:02 WRN [controller] sample.csx:36 > terminating: ControlC
+12:03 INF [controller] index.cs:101 > Listening for signals...
+12:03 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+12:03 INF [controller] index.cs:137 > Waiting for new tuning values
+12:03 INF [controller] sample.csx:26 > written
+12:03 WRN [controller] index.cs:85 > Signal received: ControlC
+12:03 WRN [controller] sample.csx:36 > terminating: ControlC
+12:03 INF [controller] index.cs:101 > Listening for signals...
+12:03 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+12:03 INF [controller] index.cs:137 > Waiting for new tuning values
+12:03 INF [controller] sample.csx:26 > written
+12:03 WRN [controller] index.cs:85 > Signal received: ControlC
+12:03 WRN [controller] sample.csx:36 > terminating: ControlC
+12:04 INF [controller] index.cs:101 > Listening for signals...
+12:04 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+12:04 INF [controller] index.cs:137 > Waiting for new tuning values
+12:04 INF [controller] sample.csx:27 > written
+12:04 WRN [controller] index.cs:85 > Signal received: ControlC
+12:04 WRN [controller] sample.csx:37 > terminating: ControlC
+12:04 INF [controller] index.cs:101 > Listening for signals...
+12:04 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+12:04 INF [controller] index.cs:137 > Waiting for new tuning values
+12:04 INF [controller] sample.csx:27 > written
+12:04 WRN [controller] index.cs:85 > Signal received: ControlC
+12:04 WRN [controller] sample.csx:37 > terminating: ControlC
+12:05 INF [controller] index.cs:101 > Listening for signals...
+12:05 INF [controller] index.cs:113 > Attempting to subscribe to OTA tuning service at tcp://localhost:8829
+12:05 INF [controller] index.cs:137 > Waiting for new tuning values
+12:05 INF [controller] sample.csx:27 > written
+12:06 WRN [controller] index.cs:85 > Signal received: ControlC
+12:06 WRN [controller] sample.csx:37 > terminating: ControlC
