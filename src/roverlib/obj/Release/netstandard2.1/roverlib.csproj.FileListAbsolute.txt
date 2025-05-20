@@ -1,0 +1,11 @@
+/workspace/roverlib-c-sharp/src/roverlib/obj/Release/netstandard2.1/roverlib.csproj.AssemblyReference.cache
+/workspace/roverlib-c-sharp/src/roverlib/obj/Release/netstandard2.1/roverlib.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/roverlib-c-sharp/src/roverlib/obj/Release/netstandard2.1/roverlib.AssemblyInfoInputs.cache
+/workspace/roverlib-c-sharp/src/roverlib/obj/Release/netstandard2.1/roverlib.AssemblyInfo.cs
+/workspace/roverlib-c-sharp/src/roverlib/obj/Release/netstandard2.1/roverlib.csproj.CoreCompileInputs.cache
+/workspace/roverlib-c-sharp/src/roverlib/obj/Release/netstandard2.1/roverlib.sourcelink.json
+/workspace/roverlib-c-sharp/src/roverlib/bin/Release/netstandard2.1/roverlib.deps.json
+/workspace/roverlib-c-sharp/src/roverlib/bin/Release/netstandard2.1/roverlib.dll
+/workspace/roverlib-c-sharp/src/roverlib/bin/Release/netstandard2.1/roverlib.pdb
+/workspace/roverlib-c-sharp/src/roverlib/obj/Release/netstandard2.1/roverlib.dll
+/workspace/roverlib-c-sharp/src/roverlib/obj/Release/netstandard2.1/roverlib.pdb

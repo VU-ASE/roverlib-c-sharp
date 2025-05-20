@@ -169,8 +169,8 @@ public class ReadStream{
 
 public static class ServiceExtend{
     // Map of all already handed out streams to the user program (to preserve singletons)
-    private readonly static Dictionary<string, WriteStream> WriteStreams = [];
-    private readonly static Dictionary<string, ReadStream> ReadStreams = [];
+    private readonly static Dictionary<string, WriteStream> WriteStreams = new Dictionary<string, WriteStream>();
+    private readonly static Dictionary<string, ReadStream> ReadStreams = new Dictionary<string, ReadStream>();
 
     // Get a stream that you can write to (i.e. an output stream).
     // this function throws an error if the stream does not exist.

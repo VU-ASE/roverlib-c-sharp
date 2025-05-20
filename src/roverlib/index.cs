@@ -6,6 +6,7 @@ using NetMQ;
 using NetMQ.Sockets;
 using System.Net.Sockets;
 using Rovercom = ProtobufMsgs;
+using System;
 
 public static class Rover
 {

@@ -1,14 +1,13 @@
 namespace roverlib;
 
-using System.Runtime.Intrinsics.X86;
 using QuickType;
 
 
 public class ServiceConfiguration{
-    private readonly Dictionary<string, float> floatOptions = [];
-    private readonly Dictionary<string, string> stringOptions = [];
-    private readonly Dictionary<string, bool> tunable = [];
-    private ReaderWriterLockSlim rwlock = new();
+    private readonly Dictionary<string, float> floatOptions = new Dictionary<string, float>();
+    private readonly Dictionary<string, string> stringOptions = new Dictionary<string, string>();
+    private readonly Dictionary<string, bool> tunable = new Dictionary<string, bool>();
+    private ReaderWriterLockSlim rwlock = new ReaderWriterLockSlim();
     public long lastUpdate = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
     public ServiceConfiguration(Service service){

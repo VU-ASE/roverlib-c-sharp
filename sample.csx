@@ -1,4 +1,4 @@
-#r "/workspace/roverlib-c-sharp/src/roverlib/bin/Release/net8.0/roverlib.dll"
+#r "/workspace/roverlib-c-sharp/src/roverlib/bin/Release/netstandard2.1/roverlib.dll"
 #r "/root/.nuget/packages/serilog.sinks.console/6.0.0/lib/netstandard2.0/Serilog.Sinks.Console.dll"
 #r "/root/.nuget/packages/serilog.sinks.file/7.0.0/lib/netstandard2.0/Serilog.Sinks.File.dll"
 #r "/root/.nuget/packages/netmq/4.0.1.15/lib/netstandard2.1/NetMQ.dll"
@@ -13,9 +13,7 @@ using Serilog.Sinks.File;
 using NetMQ;
 using NetMQ.Sockets;
 using Rovercom = ProtobufMsgs;
-/// <summary>
-/// ////////
-/// </summary>
+
 public static class RoverService
 {
 
@@ -31,6 +29,11 @@ public static class RoverService
 
         ws.Write(so);
         Roverlog.Info("written");
+
+        while (true)
+        {
+            
+        }
     }
 
     public static void onTerminate(ConsoleSpecialKey signal)
