@@ -1,29 +1,29 @@
 # Default target: build
-.PHONY: all
+.PHONY: all lint clean test build
 all: build
 
-.PHONY: build
 build:
 	@echo "Building solution..."
 	cd src && dotnet build --configuration Release
 
-.PHONY: test
+
 test:
 	@echo "Running tests..."
 	cd src && dotnet test --configuration Release
 
-.PHONY: lint
 lint:
 	@echo "Checking code format..."
 	cd src && dotnet format --verify-no-changes
 
-.PHONY: clean
 clean:
 	@echo "Cleaning..."
 	cd src && dotnet clean
 
+# dotnet publish /workspace/roverlib-c-sharp/src/roverlib/roverlib.csproj -c Release -f netstandard2.1 -o ./publish
 publish: build
-	dotnet publish /workspace/roverlib-c-sharp/src/roverlib/roverlib.csproj -c Release -f netstandard2.1 -o ./publish
+	cp README ./src
+	cd src && dotnet pack -c Release
+	@echo "Package saved at ./src/roverlib/bin/Release/roverlib.1.0.0.nupkg"
 
 # Extra testing to run the sample file
 sample: build

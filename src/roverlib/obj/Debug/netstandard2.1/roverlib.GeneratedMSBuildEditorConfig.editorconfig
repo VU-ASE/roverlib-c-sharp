@@ -1,5 +1,0 @@
-is_global = true
-build_property.RootNamespace = roverlib
-build_property.ProjectDir = /workspace/roverlib-c-sharp/src/roverlib/
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
