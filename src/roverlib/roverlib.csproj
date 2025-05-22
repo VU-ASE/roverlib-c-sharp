@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <LangVersion>10.0</LangVersion> 
+    <Nullable>enable</Nullable>     
+
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AsyncIO" Version="0.1.69" />
+    <PackageReference Include="NetMQ" Version="4.0.1.15" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Google.Protobuf" Version="3.25.1" />
+    <PackageReference Include="Serilog" Version="4.2.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+  </ItemGroup>
+
+
+
+  <!-- Make sure rovercom shows no warnings -->
+  <ItemGroup>
+  <Compile Remove=".\rovercom\*.cs" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Compile Include=".\rovercom\*.cs">
+      <NoWarn>CS8981</NoWarn> <!-- Example: 1591 = missing XML comment -->
+    </Compile>
+  </ItemGroup>
+
+</Project>
