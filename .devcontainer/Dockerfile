@@ -27,3 +27,17 @@ RUN apt-get update && \
     libreadline-dev \
     libffi-dev \
     libbz2-dev
+
+
+ARG HOST_UID
+
+RUN echo 'root:dev' | chpasswd
+RUN useradd -u ${HOST_UID} -ms /bin/bash dev && echo 'dev:dev' | chpasswd && adduser dev sudo
+RUN echo 'dev ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
+#COPY --chown=dev:dev .devcontainer/scripts/gu /usr/local/bin/gu
+#COPY --chown=dev:dev .devcontainer/scripts/.bashrc /home/dev/.bashrc
+
+USER dev
+
+    

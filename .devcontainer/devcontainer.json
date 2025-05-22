@@ -2,7 +2,10 @@
   "name": "ASE-roverlib-csharp",
   "build": {
     "dockerfile": "Dockerfile",
-    "context": "."
+    "context": ".",
+    "args": {
+      "HOST_UID": "1000"
+    }
   },
   "mounts": [
     "source=${localWorkspaceFolder},target=/workspace/roverlib-c-sharp,type=bind"
@@ -16,9 +19,8 @@
         "ms-dotnettools.dotnet-format",
         "editorconfig.editorconfig",
         "dbankier.vscode-quick-select"
-        
       ]
     }
-  }
-  
+  },
+  "remoteUser": "dev"
 }
