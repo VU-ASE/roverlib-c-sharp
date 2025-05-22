@@ -4,7 +4,10 @@ all: build
 
 build:
 	@echo "Building solution..."
-	cd src && dotnet build --configuration Release
+	cd src && dotnet build --configuration Release && dotnet publish
+	mkdir -p out
+	cp src/roverlib/bin/Release/netstandard2.1/publish/*.dll out/
+
 
 test:
 	@echo "Running tests..."
