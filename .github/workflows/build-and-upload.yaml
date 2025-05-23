@@ -10,8 +10,8 @@ permissions:
 
 jobs:
 
-    build-rust-binaries:
-        name: Build roverd and rover-local
+    build-roverlib-c-sharp:
+        name: Build roverlib-c-sharp
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Repository
@@ -65,7 +65,7 @@ jobs:
             - name: Set VERSION from tag
               run: echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_ENV
 
-            # Upload rovrectl binaries and roverd
+            # Upload asset
             - uses: AButler/upload-release-assets@v3.0
               with:
                   files: publish/*;
