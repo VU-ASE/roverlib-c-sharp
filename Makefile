@@ -5,8 +5,8 @@ all: build
 build:
 	@echo "Building solution..."
 	cd src && dotnet build --configuration Release && dotnet publish
-	mkdir -p out
-	cp src/roverlib/bin/Release/netstandard2.1/publish/*.dll out/
+	mkdir -p roverlib-c-sharp
+	cp src/roverlib/bin/Release/netstandard2.1/publish/*.dll roverlib-c-sharp/
 
 
 test:

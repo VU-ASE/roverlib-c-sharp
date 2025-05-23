@@ -1,6 +1,6 @@
 <h1 align="center"><code>roverlib</code> for <code>C#</code></h1>
 <div align="center">
-  <a href="">Latest release</a>
+  <a href="https://github.com/VU-ASE/roverlib-c-sharp/releases/latest">Latest release</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
   <a href="https://ase.vu.nl/docs/category/roverlib-c-sharp">Documentation</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
@@ -20,3 +20,4 @@ roverctl service init c-sharp --name c-sharp-example-service --source github.com
 ```
 
 Read more about using `roverctl` to initialize services [here](https://ase.vu.nl/docs/framework/Software/rover/roverctl/usage#initialize-a-service).
+
