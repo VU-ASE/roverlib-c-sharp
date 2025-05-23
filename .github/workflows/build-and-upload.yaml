@@ -28,47 +28,12 @@ jobs:
             - name: Debug print
               run: |
                   ls -lah
-                  file roverlib-c-sharp
-
-            - name: Save roverlib-c-sharp artifact
-              uses: actions/upload-artifact@v4
-              with:
-                  name: roverlib-c-sharp
-                  path: "${{ github.workspace }}/roverlib-c-sharp/roverlib-c-sharp.zip"
-
-    upload-release-assets:
-        name: Upload release assets
-        needs:
-            - build-roverlib-c-sharp
-
-        runs-on: ubuntu-latest
-        steps:
-            - name: Log in to GitHub Container Registry
-              uses: docker/login-action@v3
-              with:
-                  registry: ghcr.io
-                  username: ${{ github.actor }}
-                  password: ${{ secrets.GITHUB_TOKEN }}
-
-            - name: Download roverlib-c-sharp artifacts
-              uses: actions/download-artifact@v4
-              with:
-                  name: roverlib-c-sharp
-                  path: publish/
-
-            - name: Debug print
-              run: |
-                  ls -lah
-                  file publish
-                  file publish/*
-
-            - name: Set VERSION from tag
-              run: echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_ENV
+                  file roverlib-c-sharp*
 
             # Upload asset
             - uses: AButler/upload-release-assets@v3.0
               with:
-                  files: publish/*;
+                  files: roverlib-c-sharp.zip;
                   repo-token: ${{ secrets.GITHUB_TOKEN }}
                   release-tag: ${{ env.VERSION }}
 
