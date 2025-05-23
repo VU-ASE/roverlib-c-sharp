@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/VU-ASE/roverlib-c-sharp/compare/v1.0.1...v1.0.2) (2025-05-23)
+
+
+### Bug Fixes
+
+* one semicolon too many ([ceea2d9](https://github.com/VU-ASE/roverlib-c-sharp/commit/ceea2d92211ee0c69d7b9c10f94978ac98a19ffc))
+
 ## [1.0.1](https://github.com/VU-ASE/roverlib-c-sharp/compare/v1.0.0...v1.0.1) (2025-05-23)
 
 
