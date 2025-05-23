@@ -33,7 +33,7 @@ jobs:
             # Upload asset
             - uses: AButler/upload-release-assets@v3.0
               with:
-                  files: roverlib-c-sharp.zip;
+                  files: roverlib-c-sharp.zip
                   repo-token: ${{ secrets.GITHUB_TOKEN }}
                   release-tag: ${{ env.VERSION }}
 
