@@ -1,18 +1,4 @@
 # Installation
 
-:::info[Recommended approach]
+This library needs to be installed manually by downloading the latest [release](https://github.com/VU-ASE/roverlib-c-sharp/releases) and extracting it to a known location. Then, that location needs to be updated in the project file of the consuming C# program. See the [service-template](https://github.com/VU-ASE/service-template-c-sharp/blob/main/README.md) for details.
 
-It is not recommended to install this library manually. Instead, you can initialize a Go service using `roverctl` using [this command](https://ase.vu.nl/docs/framework/Software/rover/roverctl/usage/#initialize-a-service).
-
-:::
-
-The `roverlib-go` library can be installed using `go get` in any Go module as follows:
-
-```bash
-# Install the latest version
-go get github.com/VU-ASE/roverlib-go
-# Install a specific version
-go get github.com/VU-ASE/roverlib-go@v1.2.6
-```
-
-Using the same commands, you can update or downgrade `roverlib-go` in-place in your Go module. All available versions that can be installed can be found [here](https://github.com/VU-ASE/roverlib-go/releases).
