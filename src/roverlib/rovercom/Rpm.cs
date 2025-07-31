@@ -24,20 +24,29 @@ namespace ProtobufMsgs {
     static RpmReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFvdXRwdXRzL3JwbS5wcm90bxINcHJvdG9idWZfbXNncyJbCg9ScG1TZW5z",
-            "b3JPdXRwdXQSDwoHbGVmdFJwbRgBIAEoAhIRCglsZWZ0QW5nbGUYAiABKAIS",
-            "EAoIcmlnaHRScG0YAyABKAISEgoKcmlnaHRBbmdsZRgEIAEoAkIQWg5hc2Uv",
-            "cGJfb3V0cHV0c2IGcHJvdG8z"));
+            "ChFvdXRwdXRzL3JwbS5wcm90bxINcHJvdG9idWZfbXNncyJ6Cg9ScG1TZW5z",
+            "b3JPdXRwdXQSMgoJbGVmdE1vdG9yGAEgASgLMh8ucHJvdG9idWZfbXNncy5N",
+            "b3RvckluZm9ybWF0aW9uEjMKCnJpZ2h0TW90b3IYAiABKAsyHy5wcm90b2J1",
+            "Zl9tc2dzLk1vdG9ySW5mb3JtYXRpb24iawoQTW90b3JJbmZvcm1hdGlvbhIL",
+            "CgNycG0YASABKAISDQoFc3BlZWQYAiABKAISDQoFdGlja3MYAyABKA0SFAoM",
+            "dGltZW91dENvdW50GAQgASgNEhYKDnNlcXVlbmNlTnVtYmVyGAUgASgNQhBa",
+            "DmFzZS9wYl9vdXRwdXRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.RpmSensorOutput), global::ProtobufMsgs.RpmSensorOutput.Parser, new[]{ "LeftRpm", "LeftAngle", "RightRpm", "RightAngle" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.RpmSensorOutput), global::ProtobufMsgs.RpmSensorOutput.Parser, new[]{ "LeftMotor", "RightMotor" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.MotorInformation), global::ProtobufMsgs.MotorInformation.Parser, new[]{ "Rpm", "Speed", "Ticks", "TimeoutCount", "SequenceNumber" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
+  /// <summary>
+  ///
+  /// This is the message format that a RPM sensor service can send out. It is deliberately left with many details, to allow 
+  /// for different use cases.
+  /// </summary>
   public sealed partial class RpmSensorOutput : pb::IMessage<RpmSensorOutput> {
     private static readonly pb::MessageParser<RpmSensorOutput> _parser = new pb::MessageParser<RpmSensorOutput>(() => new RpmSensorOutput());
     private pb::UnknownFieldSet _unknownFields;
@@ -63,10 +72,8 @@ namespace ProtobufMsgs {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RpmSensorOutput(RpmSensorOutput other) : this() {
-      leftRpm_ = other.leftRpm_;
-      leftAngle_ = other.leftAngle_;
-      rightRpm_ = other.rightRpm_;
-      rightAngle_ = other.rightAngle_;
+      leftMotor_ = other.leftMotor_ != null ? other.leftMotor_.Clone() : null;
+      rightMotor_ = other.rightMotor_ != null ? other.rightMotor_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -75,47 +82,25 @@ namespace ProtobufMsgs {
       return new RpmSensorOutput(this);
     }
 
-    /// <summary>Field number for the "leftRpm" field.</summary>
-    public const int LeftRpmFieldNumber = 1;
-    private float leftRpm_;
+    /// <summary>Field number for the "leftMotor" field.</summary>
+    public const int LeftMotorFieldNumber = 1;
+    private global::ProtobufMsgs.MotorInformation leftMotor_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float LeftRpm {
-      get { return leftRpm_; }
+    public global::ProtobufMsgs.MotorInformation LeftMotor {
+      get { return leftMotor_; }
       set {
-        leftRpm_ = value;
+        leftMotor_ = value;
       }
     }
 
-    /// <summary>Field number for the "leftAngle" field.</summary>
-    public const int LeftAngleFieldNumber = 2;
-    private float leftAngle_;
+    /// <summary>Field number for the "rightMotor" field.</summary>
+    public const int RightMotorFieldNumber = 2;
+    private global::ProtobufMsgs.MotorInformation rightMotor_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float LeftAngle {
-      get { return leftAngle_; }
+    public global::ProtobufMsgs.MotorInformation RightMotor {
+      get { return rightMotor_; }
       set {
-        leftAngle_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "rightRpm" field.</summary>
-    public const int RightRpmFieldNumber = 3;
-    private float rightRpm_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float RightRpm {
-      get { return rightRpm_; }
-      set {
-        rightRpm_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "rightAngle" field.</summary>
-    public const int RightAngleFieldNumber = 4;
-    private float rightAngle_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float RightAngle {
-      get { return rightAngle_; }
-      set {
-        rightAngle_ = value;
+        rightMotor_ = value;
       }
     }
 
@@ -132,20 +117,16 @@ namespace ProtobufMsgs {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(LeftRpm, other.LeftRpm)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(LeftAngle, other.LeftAngle)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(RightRpm, other.RightRpm)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(RightAngle, other.RightAngle)) return false;
+      if (!object.Equals(LeftMotor, other.LeftMotor)) return false;
+      if (!object.Equals(RightMotor, other.RightMotor)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (LeftRpm != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(LeftRpm);
-      if (LeftAngle != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(LeftAngle);
-      if (RightRpm != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(RightRpm);
-      if (RightAngle != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(RightAngle);
+      if (leftMotor_ != null) hash ^= LeftMotor.GetHashCode();
+      if (rightMotor_ != null) hash ^= RightMotor.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -159,21 +140,13 @@ namespace ProtobufMsgs {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (LeftRpm != 0F) {
-        output.WriteRawTag(13);
-        output.WriteFloat(LeftRpm);
+      if (leftMotor_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(LeftMotor);
       }
-      if (LeftAngle != 0F) {
-        output.WriteRawTag(21);
-        output.WriteFloat(LeftAngle);
-      }
-      if (RightRpm != 0F) {
-        output.WriteRawTag(29);
-        output.WriteFloat(RightRpm);
-      }
-      if (RightAngle != 0F) {
-        output.WriteRawTag(37);
-        output.WriteFloat(RightAngle);
+      if (rightMotor_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(RightMotor);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -183,17 +156,11 @@ namespace ProtobufMsgs {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (LeftRpm != 0F) {
-        size += 1 + 4;
+      if (leftMotor_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LeftMotor);
       }
-      if (LeftAngle != 0F) {
-        size += 1 + 4;
-      }
-      if (RightRpm != 0F) {
-        size += 1 + 4;
-      }
-      if (RightAngle != 0F) {
-        size += 1 + 4;
+      if (rightMotor_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RightMotor);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -206,17 +173,267 @@ namespace ProtobufMsgs {
       if (other == null) {
         return;
       }
-      if (other.LeftRpm != 0F) {
-        LeftRpm = other.LeftRpm;
+      if (other.leftMotor_ != null) {
+        if (leftMotor_ == null) {
+          LeftMotor = new global::ProtobufMsgs.MotorInformation();
+        }
+        LeftMotor.MergeFrom(other.LeftMotor);
       }
-      if (other.LeftAngle != 0F) {
-        LeftAngle = other.LeftAngle;
+      if (other.rightMotor_ != null) {
+        if (rightMotor_ == null) {
+          RightMotor = new global::ProtobufMsgs.MotorInformation();
+        }
+        RightMotor.MergeFrom(other.RightMotor);
       }
-      if (other.RightRpm != 0F) {
-        RightRpm = other.RightRpm;
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (leftMotor_ == null) {
+              LeftMotor = new global::ProtobufMsgs.MotorInformation();
+            }
+            input.ReadMessage(LeftMotor);
+            break;
+          }
+          case 18: {
+            if (rightMotor_ == null) {
+              RightMotor = new global::ProtobufMsgs.MotorInformation();
+            }
+            input.ReadMessage(RightMotor);
+            break;
+          }
+        }
       }
-      if (other.RightAngle != 0F) {
-        RightAngle = other.RightAngle;
+    }
+
+  }
+
+  public sealed partial class MotorInformation : pb::IMessage<MotorInformation> {
+    private static readonly pb::MessageParser<MotorInformation> _parser = new pb::MessageParser<MotorInformation>(() => new MotorInformation());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MotorInformation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProtobufMsgs.RpmReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MotorInformation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MotorInformation(MotorInformation other) : this() {
+      rpm_ = other.rpm_;
+      speed_ = other.speed_;
+      ticks_ = other.ticks_;
+      timeoutCount_ = other.timeoutCount_;
+      sequenceNumber_ = other.sequenceNumber_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MotorInformation Clone() {
+      return new MotorInformation(this);
+    }
+
+    /// <summary>Field number for the "rpm" field.</summary>
+    public const int RpmFieldNumber = 1;
+    private float rpm_;
+    /// <summary>
+    /// This is probably all the information you need to understand how the motor behaves
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float Rpm {
+      get { return rpm_; }
+      set {
+        rpm_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "speed" field.</summary>
+    public const int SpeedFieldNumber = 2;
+    private float speed_;
+    /// <summary>
+    /// Speed in m/s, as computed from the RPM
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float Speed {
+      get { return speed_; }
+      set {
+        speed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ticks" field.</summary>
+    public const int TicksFieldNumber = 3;
+    private uint ticks_;
+    /// <summary>
+    /// More fine-grained details to (re)compute the RPM and speed or other parameters you are interested in
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Ticks {
+      get { return ticks_; }
+      set {
+        ticks_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "timeoutCount" field.</summary>
+    public const int TimeoutCountFieldNumber = 4;
+    private uint timeoutCount_;
+    /// <summary>
+    /// Number of timeouts since the last timer reset, if this is greater than 0, the motor is not spinning
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint TimeoutCount {
+      get { return timeoutCount_; }
+      set {
+        timeoutCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sequenceNumber" field.</summary>
+    public const int SequenceNumberFieldNumber = 5;
+    private uint sequenceNumber_;
+    /// <summary>
+    /// Sequence number of the message, can be used to detect if the message is stale
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint SequenceNumber {
+      get { return sequenceNumber_; }
+      set {
+        sequenceNumber_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MotorInformation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MotorInformation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Rpm, other.Rpm)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Speed, other.Speed)) return false;
+      if (Ticks != other.Ticks) return false;
+      if (TimeoutCount != other.TimeoutCount) return false;
+      if (SequenceNumber != other.SequenceNumber) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Rpm != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Rpm);
+      if (Speed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Speed);
+      if (Ticks != 0) hash ^= Ticks.GetHashCode();
+      if (TimeoutCount != 0) hash ^= TimeoutCount.GetHashCode();
+      if (SequenceNumber != 0) hash ^= SequenceNumber.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Rpm != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(Rpm);
+      }
+      if (Speed != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(Speed);
+      }
+      if (Ticks != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Ticks);
+      }
+      if (TimeoutCount != 0) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(TimeoutCount);
+      }
+      if (SequenceNumber != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(SequenceNumber);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Rpm != 0F) {
+        size += 1 + 4;
+      }
+      if (Speed != 0F) {
+        size += 1 + 4;
+      }
+      if (Ticks != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Ticks);
+      }
+      if (TimeoutCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TimeoutCount);
+      }
+      if (SequenceNumber != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SequenceNumber);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MotorInformation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Rpm != 0F) {
+        Rpm = other.Rpm;
+      }
+      if (other.Speed != 0F) {
+        Speed = other.Speed;
+      }
+      if (other.Ticks != 0) {
+        Ticks = other.Ticks;
+      }
+      if (other.TimeoutCount != 0) {
+        TimeoutCount = other.TimeoutCount;
+      }
+      if (other.SequenceNumber != 0) {
+        SequenceNumber = other.SequenceNumber;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -230,19 +447,23 @@ namespace ProtobufMsgs {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 13: {
-            LeftRpm = input.ReadFloat();
+            Rpm = input.ReadFloat();
             break;
           }
           case 21: {
-            LeftAngle = input.ReadFloat();
+            Speed = input.ReadFloat();
             break;
           }
-          case 29: {
-            RightRpm = input.ReadFloat();
+          case 24: {
+            Ticks = input.ReadUInt32();
             break;
           }
-          case 37: {
-            RightAngle = input.ReadFloat();
+          case 32: {
+            TimeoutCount = input.ReadUInt32();
+            break;
+          }
+          case 40: {
+            SequenceNumber = input.ReadUInt32();
             break;
           }
         }

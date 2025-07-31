@@ -38,6 +38,10 @@ namespace ProtobufMsgs {
 
   }
   #region Messages
+  /// <summary>
+  ///
+  /// This is the message format that a battery service can send out. It contains information about the battery's current state.
+  /// </summary>
   public sealed partial class BatterySensorOutput : pb::IMessage<BatterySensorOutput> {
     private static readonly pb::MessageParser<BatterySensorOutput> _parser = new pb::MessageParser<BatterySensorOutput>(() => new BatterySensorOutput());
     private pb::UnknownFieldSet _unknownFields;
@@ -77,6 +81,9 @@ namespace ProtobufMsgs {
     /// <summary>Field number for the "currentOutputVoltage" field.</summary>
     public const int CurrentOutputVoltageFieldNumber = 1;
     private float currentOutputVoltage_;
+    /// <summary>
+    /// The current voltage of the battery in volts
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float CurrentOutputVoltage {
       get { return currentOutputVoltage_; }
@@ -88,6 +95,9 @@ namespace ProtobufMsgs {
     /// <summary>Field number for the "warnVoltage" field.</summary>
     public const int WarnVoltageFieldNumber = 2;
     private float warnVoltage_;
+    /// <summary>
+    /// The voltage at which the framework will warn the user about low battery
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float WarnVoltage {
       get { return warnVoltage_; }
@@ -99,6 +109,9 @@ namespace ProtobufMsgs {
     /// <summary>Field number for the "killVoltage" field.</summary>
     public const int KillVoltageFieldNumber = 3;
     private float killVoltage_;
+    /// <summary>
+    /// The voltage at which the framework will shut down the debix to prevent undercharge
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float KillVoltage {
       get { return killVoltage_; }
