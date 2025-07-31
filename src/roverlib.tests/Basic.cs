@@ -1,4 +1,5 @@
 namespace roverlib.tests;
+
 using roverlib;
 using QuickType;
 using Xunit;
@@ -78,8 +79,8 @@ public class Basic
         {
             Rovercom.SensorOutput so = new Rovercom.SensorOutput();
             so.Status = 400;
-            so.RpmOuput = new Rovercom.RpmSensorOutput();
-            so.RpmOuput.LeftAngle = 2.0f;
+            so.RpmOutput = new Rovercom.RpmSensorOutput();
+            so.RpmOutput.LeftMotor.Speed = 2.0f;
             // so.SpeedOutput = new Rovercom.SpeedSensorOutput();
             // so.SpeedOutput.Rpm = 4;
 
@@ -111,7 +112,7 @@ public class Basic
         {
             Rovercom.SensorOutput so = rs.Read();
             Roverlog.Info($"incoming status: {so.Status}");
-            Roverlog.Info($"Incoming left angle: {so.RpmOuput.LeftAngle}");
+            Roverlog.Info($"Incoming left angle: {so.RpmOutput.LeftMotor.Rpm}");
             // Roverlog.Info($"incoming speedoutput: {so.SpeedOutput.Rpm}");
             // Roverlog.Info("incoming: " + System.Text.Encoding.UTF8.GetString(rs.ReadBytes()));
             Thread.Sleep(300);
@@ -131,7 +132,7 @@ public class Basic
         s.Number = new Rovercom.TuningState.Types.Parameter.Types.NumberParameter();
         s.Number.Key = "speed";
         s.Number.Value = 100;
-        
+
         var tu = new Rovercom.TuningState();
         tu.Timestamp = (ulong)DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         tu.DynamicParameters.Add(s);
@@ -141,9 +142,9 @@ public class Basic
             Thread.Sleep(100);
             ws.WriteBytes(tu.ToByteArray());
         }
-        
-        
-    //         time.sleep(2)
+
+
+        //         time.sleep(2)
         // context = zmq.Context()
         // socket = context.socket(zmq.PUB)
         // socket.bind("tcp://*:8829")
@@ -166,7 +167,7 @@ public class Basic
 
 
 }
-    
+
 
 
 
