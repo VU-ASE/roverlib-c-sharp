@@ -30,7 +30,7 @@ namespace ProtobufMsgs {
             "dHB1dHMvaW11LnByb3RvGhVvdXRwdXRzL2JhdHRlcnkucHJvdG8aEW91dHB1",
             "dHMvcnBtLnByb3RvGhFvdXRwdXRzL2x1eC5wcm90bxoVb3V0cHV0cy9sYXB0",
             "aW1lLnByb3RvGhVvdXRwdXRzL2dlbmVyaWMucHJvdG8aE291dHB1dHMvbGlk",
-            "YXIucHJvdG8aFG91dHB1dHMvZW5lcmd5LnByb3RvIsEJCgxTZW5zb3JPdXRw",
+            "YXIucHJvdG8aFG91dHB1dHMvZW5lcmd5LnByb3RvIosJCgxTZW5zb3JPdXRw",
             "dXQSEAoIc2Vuc29ySWQYASABKA0SEQoJdGltZXN0YW1wGAIgASgEEg4KBnN0",
             "YXR1cxgDIAEoDRI5CgxjYW1lcmFPdXRwdXQYBCABKAsyIS5wcm90b2J1Zl9t",
             "c2dzLkNhbWVyYVNlbnNvck91dHB1dEgAEj0KDmRpc3RhbmNlT3V0cHV0GAUg",
@@ -40,29 +40,28 @@ namespace ProtobufMsgs {
             "Zl9tc2dzLkNvbnRyb2xsZXJPdXRwdXRIABIzCglpbXVPdXRwdXQYCCABKAsy",
             "Hi5wcm90b2J1Zl9tc2dzLkltdVNlbnNvck91dHB1dEgAEjsKDWJhdHRlcnlP",
             "dXRwdXQYCSABKAsyIi5wcm90b2J1Zl9tc2dzLkJhdHRlcnlTZW5zb3JPdXRw",
-            "dXRIABIyCghycG1PdXB1dBgKIAEoCzIeLnByb3RvYnVmX21zZ3MuUnBtU2Vu",
-            "c29yT3V0cHV0SAASMwoJbHV4T3V0cHV0GAsgASgLMh4ucHJvdG9idWZfbXNn",
-            "cy5MdXhTZW5zb3JPdXRwdXRIABI1Cg1sYXB0aW1lT3V0cHV0GAwgASgLMhwu",
-            "cHJvdG9idWZfbXNncy5MYXBUaW1lT3V0cHV0SAASOwoQZ2VuZXJpY0ludFNj",
-            "YWxhchgNIAEoCzIfLnByb3RvYnVmX21zZ3MuR2VuZXJpY0ludFNjYWxhckgA",
-            "Ej8KEmdlbmVyaWNGbG9hdFNjYWxhchgOIAEoCzIhLnByb3RvYnVmX21zZ3Mu",
-            "R2VuZXJpY0Zsb2F0U2NhbGFySAASPQoRZ2VuZXJpY0Jvb2xTY2FsYXIYDyAB",
-            "KAsyIC5wcm90b2J1Zl9tc2dzLkdlbmVyaWNCb29sU2NhbGFySAASQQoTZ2Vu",
-            "ZXJpY1N0cmluZ1NjYWxhchgQIAEoCzIiLnByb3RvYnVmX21zZ3MuR2VuZXJp",
-            "Y1N0cmluZ1NjYWxhckgAEjkKD2dlbmVyaWNJbnRBcnJheRgRIAEoCzIeLnBy",
-            "b3RvYnVmX21zZ3MuR2VuZXJpY0ludEFycmF5SAASPQoRZ2VuZXJpY0Zsb2F0",
-            "QXJyYXkYEiABKAsyIC5wcm90b2J1Zl9tc2dzLkdlbmVyaWNGbG9hdEFycmF5",
-            "SAASOwoQZ2VuZXJpY0Jvb2xBcnJheRgTIAEoCzIfLnByb3RvYnVmX21zZ3Mu",
-            "R2VuZXJpY0Jvb2xBcnJheUgAEj8KEmdlbmVyaWNTdHJpbmdBcnJheRgUIAEo",
-            "CzIhLnByb3RvYnVmX21zZ3MuR2VuZXJpY1N0cmluZ0FycmF5SAASNwoLbGlk",
-            "YXJPdXRwdXQYFSABKAsyIC5wcm90b2J1Zl9tc2dzLkxpZGFyU2Vuc29yT3V0",
-            "cHV0SAASOQoMZW5lcmd5T3V0cHV0GBYgASgLMiEucHJvdG9idWZfbXNncy5F",
-            "bmVyZ3lTZW5zb3JPdXRwdXRIAEIOCgxzZW5zb3JPdXRwdXRCEFoOYXNlL3Bi",
-            "X291dHB1dHNiBnByb3RvMw=="));
+            "dXRIABIzCglycG1PdXRwdXQYCiABKAsyHi5wcm90b2J1Zl9tc2dzLlJwbVNl",
+            "bnNvck91dHB1dEgAEjMKCWx1eE91dHB1dBgLIAEoCzIeLnByb3RvYnVmX21z",
+            "Z3MuTHV4U2Vuc29yT3V0cHV0SAASOwoQZ2VuZXJpY0ludFNjYWxhchgNIAEo",
+            "CzIfLnByb3RvYnVmX21zZ3MuR2VuZXJpY0ludFNjYWxhckgAEj8KEmdlbmVy",
+            "aWNGbG9hdFNjYWxhchgOIAEoCzIhLnByb3RvYnVmX21zZ3MuR2VuZXJpY0Zs",
+            "b2F0U2NhbGFySAASPQoRZ2VuZXJpY0Jvb2xTY2FsYXIYDyABKAsyIC5wcm90",
+            "b2J1Zl9tc2dzLkdlbmVyaWNCb29sU2NhbGFySAASQQoTZ2VuZXJpY1N0cmlu",
+            "Z1NjYWxhchgQIAEoCzIiLnByb3RvYnVmX21zZ3MuR2VuZXJpY1N0cmluZ1Nj",
+            "YWxhckgAEjkKD2dlbmVyaWNJbnRBcnJheRgRIAEoCzIeLnByb3RvYnVmX21z",
+            "Z3MuR2VuZXJpY0ludEFycmF5SAASPQoRZ2VuZXJpY0Zsb2F0QXJyYXkYEiAB",
+            "KAsyIC5wcm90b2J1Zl9tc2dzLkdlbmVyaWNGbG9hdEFycmF5SAASOwoQZ2Vu",
+            "ZXJpY0Jvb2xBcnJheRgTIAEoCzIfLnByb3RvYnVmX21zZ3MuR2VuZXJpY0Jv",
+            "b2xBcnJheUgAEj8KEmdlbmVyaWNTdHJpbmdBcnJheRgUIAEoCzIhLnByb3Rv",
+            "YnVmX21zZ3MuR2VuZXJpY1N0cmluZ0FycmF5SAASNwoLbGlkYXJPdXRwdXQY",
+            "FSABKAsyIC5wcm90b2J1Zl9tc2dzLkxpZGFyU2Vuc29yT3V0cHV0SAASOQoM",
+            "ZW5lcmd5T3V0cHV0GBYgASgLMiEucHJvdG9idWZfbXNncy5FbmVyZ3lTZW5z",
+            "b3JPdXRwdXRIAEIOCgxzZW5zb3JPdXRwdXRCEFoOYXNlL3BiX291dHB1dHNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::ProtobufMsgs.CameraReflection.Descriptor, global::ProtobufMsgs.DistanceReflection.Descriptor, global::ProtobufMsgs.SpeedReflection.Descriptor, global::ProtobufMsgs.ControllerReflection.Descriptor, global::ProtobufMsgs.ImuReflection.Descriptor, global::ProtobufMsgs.BatteryReflection.Descriptor, global::ProtobufMsgs.RpmReflection.Descriptor, global::ProtobufMsgs.LuxReflection.Descriptor, global::ProtobufMsgs.LaptimeReflection.Descriptor, global::ProtobufMsgs.GenericReflection.Descriptor, global::ProtobufMsgs.LidarReflection.Descriptor, global::ProtobufMsgs.EnergyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.SensorOutput), global::ProtobufMsgs.SensorOutput.Parser, new[]{ "SensorId", "Timestamp", "Status", "CameraOutput", "DistanceOutput", "SpeedOutput", "ControllerOutput", "ImuOutput", "BatteryOutput", "RpmOuput", "LuxOutput", "LaptimeOutput", "GenericIntScalar", "GenericFloatScalar", "GenericBoolScalar", "GenericStringScalar", "GenericIntArray", "GenericFloatArray", "GenericBoolArray", "GenericStringArray", "LidarOutput", "EnergyOutput" }, new[]{ "SensorOutput" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.SensorOutput), global::ProtobufMsgs.SensorOutput.Parser, new[]{ "SensorId", "Timestamp", "Status", "CameraOutput", "DistanceOutput", "SpeedOutput", "ControllerOutput", "ImuOutput", "BatteryOutput", "RpmOutput", "LuxOutput", "GenericIntScalar", "GenericFloatScalar", "GenericBoolScalar", "GenericStringScalar", "GenericIntArray", "GenericFloatArray", "GenericBoolArray", "GenericStringArray", "LidarOutput", "EnergyOutput" }, new[]{ "SensorOutput" }, null, null, null)
           }));
     }
     #endregion
@@ -116,14 +115,11 @@ namespace ProtobufMsgs {
         case SensorOutputOneofCase.BatteryOutput:
           BatteryOutput = other.BatteryOutput.Clone();
           break;
-        case SensorOutputOneofCase.RpmOuput:
-          RpmOuput = other.RpmOuput.Clone();
+        case SensorOutputOneofCase.RpmOutput:
+          RpmOutput = other.RpmOutput.Clone();
           break;
         case SensorOutputOneofCase.LuxOutput:
           LuxOutput = other.LuxOutput.Clone();
-          break;
-        case SensorOutputOneofCase.LaptimeOutput:
-          LaptimeOutput = other.LaptimeOutput.Clone();
           break;
         case SensorOutputOneofCase.GenericIntScalar:
           GenericIntScalar = other.GenericIntScalar.Clone();
@@ -274,14 +270,14 @@ namespace ProtobufMsgs {
       }
     }
 
-    /// <summary>Field number for the "rpmOuput" field.</summary>
-    public const int RpmOuputFieldNumber = 10;
+    /// <summary>Field number for the "rpmOutput" field.</summary>
+    public const int RpmOutputFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::ProtobufMsgs.RpmSensorOutput RpmOuput {
-      get { return sensorOutputCase_ == SensorOutputOneofCase.RpmOuput ? (global::ProtobufMsgs.RpmSensorOutput) sensorOutput_ : null; }
+    public global::ProtobufMsgs.RpmSensorOutput RpmOutput {
+      get { return sensorOutputCase_ == SensorOutputOneofCase.RpmOutput ? (global::ProtobufMsgs.RpmSensorOutput) sensorOutput_ : null; }
       set {
         sensorOutput_ = value;
-        sensorOutputCase_ = value == null ? SensorOutputOneofCase.None : SensorOutputOneofCase.RpmOuput;
+        sensorOutputCase_ = value == null ? SensorOutputOneofCase.None : SensorOutputOneofCase.RpmOutput;
       }
     }
 
@@ -293,17 +289,6 @@ namespace ProtobufMsgs {
       set {
         sensorOutput_ = value;
         sensorOutputCase_ = value == null ? SensorOutputOneofCase.None : SensorOutputOneofCase.LuxOutput;
-      }
-    }
-
-    /// <summary>Field number for the "laptimeOutput" field.</summary>
-    public const int LaptimeOutputFieldNumber = 12;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::ProtobufMsgs.LapTimeOutput LaptimeOutput {
-      get { return sensorOutputCase_ == SensorOutputOneofCase.LaptimeOutput ? (global::ProtobufMsgs.LapTimeOutput) sensorOutput_ : null; }
-      set {
-        sensorOutput_ = value;
-        sensorOutputCase_ = value == null ? SensorOutputOneofCase.None : SensorOutputOneofCase.LaptimeOutput;
       }
     }
 
@@ -427,9 +412,8 @@ namespace ProtobufMsgs {
       ControllerOutput = 7,
       ImuOutput = 8,
       BatteryOutput = 9,
-      RpmOuput = 10,
+      RpmOutput = 10,
       LuxOutput = 11,
-      LaptimeOutput = 12,
       GenericIntScalar = 13,
       GenericFloatScalar = 14,
       GenericBoolScalar = 15,
@@ -475,9 +459,8 @@ namespace ProtobufMsgs {
       if (!object.Equals(ControllerOutput, other.ControllerOutput)) return false;
       if (!object.Equals(ImuOutput, other.ImuOutput)) return false;
       if (!object.Equals(BatteryOutput, other.BatteryOutput)) return false;
-      if (!object.Equals(RpmOuput, other.RpmOuput)) return false;
+      if (!object.Equals(RpmOutput, other.RpmOutput)) return false;
       if (!object.Equals(LuxOutput, other.LuxOutput)) return false;
-      if (!object.Equals(LaptimeOutput, other.LaptimeOutput)) return false;
       if (!object.Equals(GenericIntScalar, other.GenericIntScalar)) return false;
       if (!object.Equals(GenericFloatScalar, other.GenericFloatScalar)) return false;
       if (!object.Equals(GenericBoolScalar, other.GenericBoolScalar)) return false;
@@ -504,9 +487,8 @@ namespace ProtobufMsgs {
       if (sensorOutputCase_ == SensorOutputOneofCase.ControllerOutput) hash ^= ControllerOutput.GetHashCode();
       if (sensorOutputCase_ == SensorOutputOneofCase.ImuOutput) hash ^= ImuOutput.GetHashCode();
       if (sensorOutputCase_ == SensorOutputOneofCase.BatteryOutput) hash ^= BatteryOutput.GetHashCode();
-      if (sensorOutputCase_ == SensorOutputOneofCase.RpmOuput) hash ^= RpmOuput.GetHashCode();
+      if (sensorOutputCase_ == SensorOutputOneofCase.RpmOutput) hash ^= RpmOutput.GetHashCode();
       if (sensorOutputCase_ == SensorOutputOneofCase.LuxOutput) hash ^= LuxOutput.GetHashCode();
-      if (sensorOutputCase_ == SensorOutputOneofCase.LaptimeOutput) hash ^= LaptimeOutput.GetHashCode();
       if (sensorOutputCase_ == SensorOutputOneofCase.GenericIntScalar) hash ^= GenericIntScalar.GetHashCode();
       if (sensorOutputCase_ == SensorOutputOneofCase.GenericFloatScalar) hash ^= GenericFloatScalar.GetHashCode();
       if (sensorOutputCase_ == SensorOutputOneofCase.GenericBoolScalar) hash ^= GenericBoolScalar.GetHashCode();
@@ -567,17 +549,13 @@ namespace ProtobufMsgs {
         output.WriteRawTag(74);
         output.WriteMessage(BatteryOutput);
       }
-      if (sensorOutputCase_ == SensorOutputOneofCase.RpmOuput) {
+      if (sensorOutputCase_ == SensorOutputOneofCase.RpmOutput) {
         output.WriteRawTag(82);
-        output.WriteMessage(RpmOuput);
+        output.WriteMessage(RpmOutput);
       }
       if (sensorOutputCase_ == SensorOutputOneofCase.LuxOutput) {
         output.WriteRawTag(90);
         output.WriteMessage(LuxOutput);
-      }
-      if (sensorOutputCase_ == SensorOutputOneofCase.LaptimeOutput) {
-        output.WriteRawTag(98);
-        output.WriteMessage(LaptimeOutput);
       }
       if (sensorOutputCase_ == SensorOutputOneofCase.GenericIntScalar) {
         output.WriteRawTag(106);
@@ -654,14 +632,11 @@ namespace ProtobufMsgs {
       if (sensorOutputCase_ == SensorOutputOneofCase.BatteryOutput) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BatteryOutput);
       }
-      if (sensorOutputCase_ == SensorOutputOneofCase.RpmOuput) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RpmOuput);
+      if (sensorOutputCase_ == SensorOutputOneofCase.RpmOutput) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RpmOutput);
       }
       if (sensorOutputCase_ == SensorOutputOneofCase.LuxOutput) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LuxOutput);
-      }
-      if (sensorOutputCase_ == SensorOutputOneofCase.LaptimeOutput) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LaptimeOutput);
       }
       if (sensorOutputCase_ == SensorOutputOneofCase.GenericIntScalar) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GenericIntScalar);
@@ -750,23 +725,17 @@ namespace ProtobufMsgs {
           }
           BatteryOutput.MergeFrom(other.BatteryOutput);
           break;
-        case SensorOutputOneofCase.RpmOuput:
-          if (RpmOuput == null) {
-            RpmOuput = new global::ProtobufMsgs.RpmSensorOutput();
+        case SensorOutputOneofCase.RpmOutput:
+          if (RpmOutput == null) {
+            RpmOutput = new global::ProtobufMsgs.RpmSensorOutput();
           }
-          RpmOuput.MergeFrom(other.RpmOuput);
+          RpmOutput.MergeFrom(other.RpmOutput);
           break;
         case SensorOutputOneofCase.LuxOutput:
           if (LuxOutput == null) {
             LuxOutput = new global::ProtobufMsgs.LuxSensorOutput();
           }
           LuxOutput.MergeFrom(other.LuxOutput);
-          break;
-        case SensorOutputOneofCase.LaptimeOutput:
-          if (LaptimeOutput == null) {
-            LaptimeOutput = new global::ProtobufMsgs.LapTimeOutput();
-          }
-          LaptimeOutput.MergeFrom(other.LaptimeOutput);
           break;
         case SensorOutputOneofCase.GenericIntScalar:
           if (GenericIntScalar == null) {
@@ -909,11 +878,11 @@ namespace ProtobufMsgs {
           }
           case 82: {
             global::ProtobufMsgs.RpmSensorOutput subBuilder = new global::ProtobufMsgs.RpmSensorOutput();
-            if (sensorOutputCase_ == SensorOutputOneofCase.RpmOuput) {
-              subBuilder.MergeFrom(RpmOuput);
+            if (sensorOutputCase_ == SensorOutputOneofCase.RpmOutput) {
+              subBuilder.MergeFrom(RpmOutput);
             }
             input.ReadMessage(subBuilder);
-            RpmOuput = subBuilder;
+            RpmOutput = subBuilder;
             break;
           }
           case 90: {
@@ -923,15 +892,6 @@ namespace ProtobufMsgs {
             }
             input.ReadMessage(subBuilder);
             LuxOutput = subBuilder;
-            break;
-          }
-          case 98: {
-            global::ProtobufMsgs.LapTimeOutput subBuilder = new global::ProtobufMsgs.LapTimeOutput();
-            if (sensorOutputCase_ == SensorOutputOneofCase.LaptimeOutput) {
-              subBuilder.MergeFrom(LaptimeOutput);
-            }
-            input.ReadMessage(subBuilder);
-            LaptimeOutput = subBuilder;
             break;
           }
           case 106: {

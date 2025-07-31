@@ -24,54 +24,37 @@ namespace ProtobufMsgs {
     static CameraReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRvdXRwdXRzL2NhbWVyYS5wcm90bxINcHJvdG9idWZfbXNncyKGBgoMQ2Fu",
-            "dmFzT2JqZWN0EjAKBGxpbmUYASABKAsyIC5wcm90b2J1Zl9tc2dzLkNhbnZh",
-            "c09iamVjdC5MaW5lSAASOgoJcmVjdGFuZ2xlGAIgASgLMiUucHJvdG9idWZf",
-            "bXNncy5DYW52YXNPYmplY3QuUmVjdGFuZ2xlSAASNAoGY2lyY2xlGAMgASgL",
-            "MiIucHJvdG9idWZfbXNncy5DYW52YXNPYmplY3QuQ2lyY2xlSAAaHQoFUG9p",
-            "bnQSCQoBeBgBIAEoDRIJCgF5GAIgASgNGjMKBUNvbG9yEgkKAXIYASABKA0S",
-            "CQoBZxgCIAEoDRIJCgFiGAMgASgNEgkKAWEYBCABKA0aqQEKBExpbmUSMAoF",
-            "c3RhcnQYASABKAsyIS5wcm90b2J1Zl9tc2dzLkNhbnZhc09iamVjdC5Qb2lu",
-            "dBIuCgNlbmQYAiABKAsyIS5wcm90b2J1Zl9tc2dzLkNhbnZhc09iamVjdC5Q",
-            "b2ludBINCgV3aWR0aBgDIAEoDRIwCgVjb2xvchgEIAEoCzIhLnByb3RvYnVm",
-            "X21zZ3MuQ2FudmFzT2JqZWN0LkNvbG9yGrgBCglSZWN0YW5nbGUSMgoHdG9w",
-            "TGVmdBgBIAEoCzIhLnByb3RvYnVmX21zZ3MuQ2FudmFzT2JqZWN0LlBvaW50",
-            "EjYKC2JvdHRvbVJpZ2h0GAIgASgLMiEucHJvdG9idWZfbXNncy5DYW52YXNP",
-            "YmplY3QuUG9pbnQSDQoFd2lkdGgYAyABKA0SMAoFY29sb3IYBCABKAsyIS5w",
-            "cm90b2J1Zl9tc2dzLkNhbnZhc09iamVjdC5Db2xvchqMAQoGQ2lyY2xlEjEK",
-            "BmNlbnRlchgBIAEoCzIhLnByb3RvYnVmX21zZ3MuQ2FudmFzT2JqZWN0LlBv",
-            "aW50Eg4KBnJhZGl1cxgCIAEoDRINCgV3aWR0aBgDIAEoDRIwCgVjb2xvchgE",
-            "IAEoCzIhLnByb3RvYnVmX21zZ3MuQ2FudmFzT2JqZWN0LkNvbG9yQggKBm9i",
-            "amVjdCJVCgZDYW52YXMSDQoFd2lkdGgYASABKA0SDgoGaGVpZ2h0GAIgASgN",
-            "EiwKB29iamVjdHMYAyADKAsyGy5wcm90b2J1Zl9tc2dzLkNhbnZhc09iamVj",
-            "dCLjAwoSQ2FtZXJhU2Vuc29yT3V0cHV0EkAKCnRyYWplY3RvcnkYASABKAsy",
-            "LC5wcm90b2J1Zl9tc2dzLkNhbWVyYVNlbnNvck91dHB1dC5UcmFqZWN0b3J5",
-            "EkEKC2RlYnVnX2ZyYW1lGAIgASgLMiwucHJvdG9idWZfbXNncy5DYW1lcmFT",
-            "ZW5zb3JPdXRwdXQuRGVidWdGcmFtZRI6CgdvYmplY3RzGAMgASgLMikucHJv",
-            "dG9idWZfbXNncy5DYW1lcmFTZW5zb3JPdXRwdXQuT2JqZWN0cxqOAQoKVHJh",
-            "amVjdG9yeRJCCgZwb2ludHMYASADKAsyMi5wcm90b2J1Zl9tc2dzLkNhbWVy",
-            "YVNlbnNvck91dHB1dC5UcmFqZWN0b3J5LlBvaW50Eg0KBXdpZHRoGAIgASgN",
-            "Eg4KBmhlaWdodBgDIAEoDRodCgVQb2ludBIJCgF4GAEgASgFEgkKAXkYAiAB",
-            "KAUaQQoKRGVidWdGcmFtZRIMCgRqcGVnGAEgASgMEiUKBmNhbnZhcxgFIAEo",
-            "CzIVLnByb3RvYnVmX21zZ3MuQ2FudmFzGjgKB09iamVjdHMSLQoFaXRlbXMY",
-            "ASADKA4yHi5wcm90b2J1Zl9tc2dzLkRldGVjdGVkT2JqZWN0cyq5AQoPRGV0",
-            "ZWN0ZWRPYmplY3RzEg8KC0ZJTklTSF9MSU5FEAASDQoJT0ZGX1RSQUNLEAES",
-            "DAoIT0JTVEFDTEUQAhIQCgxJTlRFUlNFQ1RJT04QAxIVChFNSVNTSU5HX0xF",
-            "RlRfTEFORRAEEhYKEk1JU1NJTkdfUklHSFRfTEFORRAFEg8KC1NIQVJQX1JJ",
-            "R0hUEAYSDgoKU0hBUlBfTEVGVBAHEgoKBlVfVFVSThAIEgoKBlNfVFVSThAJ",
-            "QhBaDmFzZS9wYl9vdXRwdXRzYgZwcm90bzM="));
+            "ChRvdXRwdXRzL2NhbWVyYS5wcm90bxINcHJvdG9idWZfbXNncyLjAQoSQ2Ft",
+            "ZXJhU2Vuc29yT3V0cHV0Ei0KCnJlc29sdXRpb24YASABKAsyGS5wcm90b2J1",
+            "Zl9tc2dzLlJlc29sdXRpb24SNgoPaG9yaXpvbnRhbFNjYW5zGAIgAygLMh0u",
+            "cHJvdG9idWZfbXNncy5Ib3Jpem9udGFsU2NhbhI3Cg9kZXRlY3RlZE9iamVj",
+            "dHMYAyADKA4yHi5wcm90b2J1Zl9tc2dzLkRldGVjdGVkT2JqZWN0cxItCgpk",
+            "ZWJ1Z0ZyYW1lGAQgASgLMhkucHJvdG9idWZfbXNncy5EZWJ1Z0ZyYW1lIisK",
+            "ClJlc29sdXRpb24SDQoFd2lkdGgYASABKA0SDgoGaGVpZ2h0GAIgASgNIjoK",
+            "Dkhvcml6b250YWxTY2FuEg0KBXhMZWZ0GAEgASgNEg4KBnhSaWdodBgCIAEo",
+            "DRIJCgF5GAMgASgNIkEKCkRlYnVnRnJhbWUSDAoEanBlZxgBIAEoDBIlCgZj",
+            "YW52YXMYBSABKAsyFS5wcm90b2J1Zl9tc2dzLkNhbnZhcyLJAQoMQ2FudmFz",
+            "T2JqZWN0EjQKBmNpcmNsZRgBIAEoCzIiLnByb3RvYnVmX21zZ3MuQ2FudmFz",
+            "T2JqZWN0LkNpcmNsZUgAGh0KBVBvaW50EgkKAXgYASABKA0SCQoBeRgCIAEo",
+            "DRpaCgZDaXJjbGUSMQoGY2VudGVyGAEgASgLMiEucHJvdG9idWZfbXNncy5D",
+            "YW52YXNPYmplY3QuUG9pbnQSDgoGcmFkaXVzGAIgASgNEg0KBXdpZHRoGAMg",
+            "ASgNQggKBm9iamVjdCJVCgZDYW52YXMSDQoFd2lkdGgYASABKA0SDgoGaGVp",
+            "Z2h0GAIgASgNEiwKB29iamVjdHMYAyADKAsyGy5wcm90b2J1Zl9tc2dzLkNh",
+            "bnZhc09iamVjdCq5AQoPRGV0ZWN0ZWRPYmplY3RzEg8KC0ZJTklTSF9MSU5F",
+            "EAASDQoJT0ZGX1RSQUNLEAESDAoIT0JTVEFDTEUQAhIQCgxJTlRFUlNFQ1RJ",
+            "T04QAxIVChFNSVNTSU5HX0xFRlRfTEFORRAEEhYKEk1JU1NJTkdfUklHSFRf",
+            "TEFORRAFEg8KC1NIQVJQX1JJR0hUEAYSDgoKU0hBUlBfTEVGVBAHEgoKBlVf",
+            "VFVSThAIEgoKBlNfVFVSThAJQhBaDmFzZS9wYl9vdXRwdXRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ProtobufMsgs.DetectedObjects), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CanvasObject), global::ProtobufMsgs.CanvasObject.Parser, new[]{ "Line", "Rectangle", "Circle" }, new[]{ "Object" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CanvasObject.Types.Point), global::ProtobufMsgs.CanvasObject.Types.Point.Parser, new[]{ "X", "Y" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CanvasObject.Types.Color), global::ProtobufMsgs.CanvasObject.Types.Color.Parser, new[]{ "R", "G", "B", "A" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CanvasObject.Types.Line), global::ProtobufMsgs.CanvasObject.Types.Line.Parser, new[]{ "Start", "End", "Width", "Color" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CanvasObject.Types.Rectangle), global::ProtobufMsgs.CanvasObject.Types.Rectangle.Parser, new[]{ "TopLeft", "BottomRight", "Width", "Color" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CanvasObject.Types.Circle), global::ProtobufMsgs.CanvasObject.Types.Circle.Parser, new[]{ "Center", "Radius", "Width", "Color" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.Canvas), global::ProtobufMsgs.Canvas.Parser, new[]{ "Width", "Height", "Objects" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CameraSensorOutput), global::ProtobufMsgs.CameraSensorOutput.Parser, new[]{ "Trajectory", "DebugFrame", "Objects" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory), global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory.Parser, new[]{ "Points", "Width", "Height" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory.Types.Point), global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory.Types.Point.Parser, new[]{ "X", "Y" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CameraSensorOutput.Types.DebugFrame), global::ProtobufMsgs.CameraSensorOutput.Types.DebugFrame.Parser, new[]{ "Jpeg", "Canvas" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CameraSensorOutput.Types.Objects), global::ProtobufMsgs.CameraSensorOutput.Types.Objects.Parser, new[]{ "Items" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CameraSensorOutput), global::ProtobufMsgs.CameraSensorOutput.Parser, new[]{ "Resolution", "HorizontalScans", "DetectedObjects", "DebugFrame" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.Resolution), global::ProtobufMsgs.Resolution.Parser, new[]{ "Width", "Height" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.HorizontalScan), global::ProtobufMsgs.HorizontalScan.Parser, new[]{ "XLeft", "XRight", "Y" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.DebugFrame), global::ProtobufMsgs.DebugFrame.Parser, new[]{ "Jpeg", "Canvas" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CanvasObject), global::ProtobufMsgs.CanvasObject.Parser, new[]{ "Circle" }, new[]{ "Object" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CanvasObject.Types.Point), global::ProtobufMsgs.CanvasObject.Types.Point.Parser, new[]{ "X", "Y" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.CanvasObject.Types.Circle), global::ProtobufMsgs.CanvasObject.Types.Circle.Parser, new[]{ "Center", "Radius", "Width" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtobufMsgs.Canvas), global::ProtobufMsgs.Canvas.Parser, new[]{ "Width", "Height", "Objects" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,7 +62,7 @@ namespace ProtobufMsgs {
   }
   #region Enums
   /// <summary>
-  /// Possible Objects the Imaging Module may detect
+  /// Possible Objects the Imaging Service may detect
   /// </summary>
   public enum DetectedObjects {
     /// <summary>
@@ -127,6 +110,759 @@ namespace ProtobufMsgs {
   #endregion
 
   #region Messages
+  /// <summary>
+  ///
+  /// This is the message format that a camera-like service can send out. For example, the official ASE imaging service
+  /// uses this output format. This can then be used by (for example) a controller, to determine how to steer, to stay
+  /// on the track, or to detect obstacles, intersections, etc.
+  /// </summary>
+  public sealed partial class CameraSensorOutput : pb::IMessage<CameraSensorOutput> {
+    private static readonly pb::MessageParser<CameraSensorOutput> _parser = new pb::MessageParser<CameraSensorOutput>(() => new CameraSensorOutput());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CameraSensorOutput> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProtobufMsgs.CameraReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CameraSensorOutput() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CameraSensorOutput(CameraSensorOutput other) : this() {
+      resolution_ = other.resolution_ != null ? other.resolution_.Clone() : null;
+      horizontalScans_ = other.horizontalScans_.Clone();
+      detectedObjects_ = other.detectedObjects_.Clone();
+      debugFrame_ = other.debugFrame_ != null ? other.debugFrame_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CameraSensorOutput Clone() {
+      return new CameraSensorOutput(this);
+    }
+
+    /// <summary>Field number for the "resolution" field.</summary>
+    public const int ResolutionFieldNumber = 1;
+    private global::ProtobufMsgs.Resolution resolution_;
+    /// <summary>
+    /// Basic information, contains everything you need to know to steer and compute the middle of the track
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::ProtobufMsgs.Resolution Resolution {
+      get { return resolution_; }
+      set {
+        resolution_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "horizontalScans" field.</summary>
+    public const int HorizontalScansFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::ProtobufMsgs.HorizontalScan> _repeated_horizontalScans_codec
+        = pb::FieldCodec.ForMessage(18, global::ProtobufMsgs.HorizontalScan.Parser);
+    private readonly pbc::RepeatedField<global::ProtobufMsgs.HorizontalScan> horizontalScans_ = new pbc::RepeatedField<global::ProtobufMsgs.HorizontalScan>();
+    /// <summary>
+    /// Horizontal scans of the track, where each scan returns the track edges it finds in the image
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::ProtobufMsgs.HorizontalScan> HorizontalScans {
+      get { return horizontalScans_; }
+    }
+
+    /// <summary>Field number for the "detectedObjects" field.</summary>
+    public const int DetectedObjectsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::ProtobufMsgs.DetectedObjects> _repeated_detectedObjects_codec
+        = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::ProtobufMsgs.DetectedObjects) x);
+    private readonly pbc::RepeatedField<global::ProtobufMsgs.DetectedObjects> detectedObjects_ = new pbc::RepeatedField<global::ProtobufMsgs.DetectedObjects>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::ProtobufMsgs.DetectedObjects> DetectedObjects {
+      get { return detectedObjects_; }
+    }
+
+    /// <summary>Field number for the "debugFrame" field.</summary>
+    public const int DebugFrameFieldNumber = 4;
+    private global::ProtobufMsgs.DebugFrame debugFrame_;
+    /// <summary>
+    /// Additional information that can be used to debug the image processing
+    /// if present, it is rendered in roverctl-web
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::ProtobufMsgs.DebugFrame DebugFrame {
+      get { return debugFrame_; }
+      set {
+        debugFrame_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CameraSensorOutput);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CameraSensorOutput other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Resolution, other.Resolution)) return false;
+      if(!horizontalScans_.Equals(other.horizontalScans_)) return false;
+      if(!detectedObjects_.Equals(other.detectedObjects_)) return false;
+      if (!object.Equals(DebugFrame, other.DebugFrame)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (resolution_ != null) hash ^= Resolution.GetHashCode();
+      hash ^= horizontalScans_.GetHashCode();
+      hash ^= detectedObjects_.GetHashCode();
+      if (debugFrame_ != null) hash ^= DebugFrame.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (resolution_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Resolution);
+      }
+      horizontalScans_.WriteTo(output, _repeated_horizontalScans_codec);
+      detectedObjects_.WriteTo(output, _repeated_detectedObjects_codec);
+      if (debugFrame_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(DebugFrame);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (resolution_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Resolution);
+      }
+      size += horizontalScans_.CalculateSize(_repeated_horizontalScans_codec);
+      size += detectedObjects_.CalculateSize(_repeated_detectedObjects_codec);
+      if (debugFrame_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DebugFrame);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CameraSensorOutput other) {
+      if (other == null) {
+        return;
+      }
+      if (other.resolution_ != null) {
+        if (resolution_ == null) {
+          Resolution = new global::ProtobufMsgs.Resolution();
+        }
+        Resolution.MergeFrom(other.Resolution);
+      }
+      horizontalScans_.Add(other.horizontalScans_);
+      detectedObjects_.Add(other.detectedObjects_);
+      if (other.debugFrame_ != null) {
+        if (debugFrame_ == null) {
+          DebugFrame = new global::ProtobufMsgs.DebugFrame();
+        }
+        DebugFrame.MergeFrom(other.DebugFrame);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (resolution_ == null) {
+              Resolution = new global::ProtobufMsgs.Resolution();
+            }
+            input.ReadMessage(Resolution);
+            break;
+          }
+          case 18: {
+            horizontalScans_.AddEntriesFrom(input, _repeated_horizontalScans_codec);
+            break;
+          }
+          case 26:
+          case 24: {
+            detectedObjects_.AddEntriesFrom(input, _repeated_detectedObjects_codec);
+            break;
+          }
+          case 34: {
+            if (debugFrame_ == null) {
+              DebugFrame = new global::ProtobufMsgs.DebugFrame();
+            }
+            input.ReadMessage(DebugFrame);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Resolution : pb::IMessage<Resolution> {
+    private static readonly pb::MessageParser<Resolution> _parser = new pb::MessageParser<Resolution>(() => new Resolution());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Resolution> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProtobufMsgs.CameraReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Resolution() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Resolution(Resolution other) : this() {
+      width_ = other.width_;
+      height_ = other.height_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Resolution Clone() {
+      return new Resolution(this);
+    }
+
+    /// <summary>Field number for the "width" field.</summary>
+    public const int WidthFieldNumber = 1;
+    private uint width_;
+    /// <summary>
+    /// Width of the image in pixels
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Width {
+      get { return width_; }
+      set {
+        width_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "height" field.</summary>
+    public const int HeightFieldNumber = 2;
+    private uint height_;
+    /// <summary>
+    /// Height of the image in pixels
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Height {
+      get { return height_; }
+      set {
+        height_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Resolution);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Resolution other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Width != other.Width) return false;
+      if (Height != other.Height) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Width != 0) hash ^= Width.GetHashCode();
+      if (Height != 0) hash ^= Height.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Width != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Width);
+      }
+      if (Height != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Height);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Width != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Width);
+      }
+      if (Height != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Height);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Resolution other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Width != 0) {
+        Width = other.Width;
+      }
+      if (other.Height != 0) {
+        Height = other.Height;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Width = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Height = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class HorizontalScan : pb::IMessage<HorizontalScan> {
+    private static readonly pb::MessageParser<HorizontalScan> _parser = new pb::MessageParser<HorizontalScan>(() => new HorizontalScan());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<HorizontalScan> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProtobufMsgs.CameraReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HorizontalScan() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HorizontalScan(HorizontalScan other) : this() {
+      xLeft_ = other.xLeft_;
+      xRight_ = other.xRight_;
+      y_ = other.y_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HorizontalScan Clone() {
+      return new HorizontalScan(this);
+    }
+
+    /// <summary>Field number for the "xLeft" field.</summary>
+    public const int XLeftFieldNumber = 1;
+    private uint xLeft_;
+    /// <summary>
+    /// Leftmost point in the scan in pixels (is left edge of the track)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint XLeft {
+      get { return xLeft_; }
+      set {
+        xLeft_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "xRight" field.</summary>
+    public const int XRightFieldNumber = 2;
+    private uint xRight_;
+    /// <summary>
+    /// Rightmost point in the scan in pixels (is right edge of the track)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint XRight {
+      get { return xRight_; }
+      set {
+        xRight_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "y" field.</summary>
+    public const int YFieldNumber = 3;
+    private uint y_;
+    /// <summary>
+    /// Y coordinate of the scan in pixels
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Y {
+      get { return y_; }
+      set {
+        y_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as HorizontalScan);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(HorizontalScan other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (XLeft != other.XLeft) return false;
+      if (XRight != other.XRight) return false;
+      if (Y != other.Y) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (XLeft != 0) hash ^= XLeft.GetHashCode();
+      if (XRight != 0) hash ^= XRight.GetHashCode();
+      if (Y != 0) hash ^= Y.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (XLeft != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(XLeft);
+      }
+      if (XRight != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(XRight);
+      }
+      if (Y != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Y);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (XLeft != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(XLeft);
+      }
+      if (XRight != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(XRight);
+      }
+      if (Y != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Y);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(HorizontalScan other) {
+      if (other == null) {
+        return;
+      }
+      if (other.XLeft != 0) {
+        XLeft = other.XLeft;
+      }
+      if (other.XRight != 0) {
+        XRight = other.XRight;
+      }
+      if (other.Y != 0) {
+        Y = other.Y;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            XLeft = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            XRight = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Y = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class DebugFrame : pb::IMessage<DebugFrame> {
+    private static readonly pb::MessageParser<DebugFrame> _parser = new pb::MessageParser<DebugFrame>(() => new DebugFrame());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<DebugFrame> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProtobufMsgs.CameraReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DebugFrame() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DebugFrame(DebugFrame other) : this() {
+      jpeg_ = other.jpeg_;
+      canvas_ = other.canvas_ != null ? other.canvas_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DebugFrame Clone() {
+      return new DebugFrame(this);
+    }
+
+    /// <summary>Field number for the "jpeg" field.</summary>
+    public const int JpegFieldNumber = 1;
+    private pb::ByteString jpeg_ = pb::ByteString.Empty;
+    /// <summary>
+    /// (Compressed) JPEG image of the camera output, useful for debugging
+    /// just JPEG bytes, that will be rendered in roverctl-web
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Jpeg {
+      get { return jpeg_; }
+      set {
+        jpeg_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "canvas" field.</summary>
+    public const int CanvasFieldNumber = 5;
+    private global::ProtobufMsgs.Canvas canvas_;
+    /// <summary>
+    /// A "canvas" that you can "draw" on, for example by placing points, these are also rendered in roverctl-web
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::ProtobufMsgs.Canvas Canvas {
+      get { return canvas_; }
+      set {
+        canvas_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as DebugFrame);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(DebugFrame other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Jpeg != other.Jpeg) return false;
+      if (!object.Equals(Canvas, other.Canvas)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Jpeg.Length != 0) hash ^= Jpeg.GetHashCode();
+      if (canvas_ != null) hash ^= Canvas.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Jpeg.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteBytes(Jpeg);
+      }
+      if (canvas_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Canvas);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Jpeg.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Jpeg);
+      }
+      if (canvas_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Canvas);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(DebugFrame other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Jpeg.Length != 0) {
+        Jpeg = other.Jpeg;
+      }
+      if (other.canvas_ != null) {
+        if (canvas_ == null) {
+          Canvas = new global::ProtobufMsgs.Canvas();
+        }
+        Canvas.MergeFrom(other.Canvas);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Jpeg = input.ReadBytes();
+            break;
+          }
+          case 42: {
+            if (canvas_ == null) {
+              Canvas = new global::ProtobufMsgs.Canvas();
+            }
+            input.ReadMessage(Canvas);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class CanvasObject : pb::IMessage<CanvasObject> {
     private static readonly pb::MessageParser<CanvasObject> _parser = new pb::MessageParser<CanvasObject>(() => new CanvasObject());
     private pb::UnknownFieldSet _unknownFields;
@@ -135,7 +871,7 @@ namespace ProtobufMsgs {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ProtobufMsgs.CameraReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ProtobufMsgs.CameraReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -153,12 +889,6 @@ namespace ProtobufMsgs {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CanvasObject(CanvasObject other) : this() {
       switch (other.ObjectCase) {
-        case ObjectOneofCase.Line:
-          Line = other.Line.Clone();
-          break;
-        case ObjectOneofCase.Rectangle:
-          Rectangle = other.Rectangle.Clone();
-          break;
         case ObjectOneofCase.Circle:
           Circle = other.Circle.Clone();
           break;
@@ -172,30 +902,8 @@ namespace ProtobufMsgs {
       return new CanvasObject(this);
     }
 
-    /// <summary>Field number for the "line" field.</summary>
-    public const int LineFieldNumber = 1;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::ProtobufMsgs.CanvasObject.Types.Line Line {
-      get { return objectCase_ == ObjectOneofCase.Line ? (global::ProtobufMsgs.CanvasObject.Types.Line) object_ : null; }
-      set {
-        object_ = value;
-        objectCase_ = value == null ? ObjectOneofCase.None : ObjectOneofCase.Line;
-      }
-    }
-
-    /// <summary>Field number for the "rectangle" field.</summary>
-    public const int RectangleFieldNumber = 2;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::ProtobufMsgs.CanvasObject.Types.Rectangle Rectangle {
-      get { return objectCase_ == ObjectOneofCase.Rectangle ? (global::ProtobufMsgs.CanvasObject.Types.Rectangle) object_ : null; }
-      set {
-        object_ = value;
-        objectCase_ = value == null ? ObjectOneofCase.None : ObjectOneofCase.Rectangle;
-      }
-    }
-
     /// <summary>Field number for the "circle" field.</summary>
-    public const int CircleFieldNumber = 3;
+    public const int CircleFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::ProtobufMsgs.CanvasObject.Types.Circle Circle {
       get { return objectCase_ == ObjectOneofCase.Circle ? (global::ProtobufMsgs.CanvasObject.Types.Circle) object_ : null; }
@@ -209,9 +917,7 @@ namespace ProtobufMsgs {
     /// <summary>Enum of possible cases for the "object" oneof.</summary>
     public enum ObjectOneofCase {
       None = 0,
-      Line = 1,
-      Rectangle = 2,
-      Circle = 3,
+      Circle = 1,
     }
     private ObjectOneofCase objectCase_ = ObjectOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -238,8 +944,6 @@ namespace ProtobufMsgs {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Line, other.Line)) return false;
-      if (!object.Equals(Rectangle, other.Rectangle)) return false;
       if (!object.Equals(Circle, other.Circle)) return false;
       if (ObjectCase != other.ObjectCase) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -248,8 +952,6 @@ namespace ProtobufMsgs {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (objectCase_ == ObjectOneofCase.Line) hash ^= Line.GetHashCode();
-      if (objectCase_ == ObjectOneofCase.Rectangle) hash ^= Rectangle.GetHashCode();
       if (objectCase_ == ObjectOneofCase.Circle) hash ^= Circle.GetHashCode();
       hash ^= (int) objectCase_;
       if (_unknownFields != null) {
@@ -265,16 +967,8 @@ namespace ProtobufMsgs {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (objectCase_ == ObjectOneofCase.Line) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Line);
-      }
-      if (objectCase_ == ObjectOneofCase.Rectangle) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Rectangle);
-      }
       if (objectCase_ == ObjectOneofCase.Circle) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(10);
         output.WriteMessage(Circle);
       }
       if (_unknownFields != null) {
@@ -285,12 +979,6 @@ namespace ProtobufMsgs {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (objectCase_ == ObjectOneofCase.Line) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Line);
-      }
-      if (objectCase_ == ObjectOneofCase.Rectangle) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rectangle);
-      }
       if (objectCase_ == ObjectOneofCase.Circle) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Circle);
       }
@@ -306,18 +994,6 @@ namespace ProtobufMsgs {
         return;
       }
       switch (other.ObjectCase) {
-        case ObjectOneofCase.Line:
-          if (Line == null) {
-            Line = new global::ProtobufMsgs.CanvasObject.Types.Line();
-          }
-          Line.MergeFrom(other.Line);
-          break;
-        case ObjectOneofCase.Rectangle:
-          if (Rectangle == null) {
-            Rectangle = new global::ProtobufMsgs.CanvasObject.Types.Rectangle();
-          }
-          Rectangle.MergeFrom(other.Rectangle);
-          break;
         case ObjectOneofCase.Circle:
           if (Circle == null) {
             Circle = new global::ProtobufMsgs.CanvasObject.Types.Circle();
@@ -338,24 +1014,6 @@ namespace ProtobufMsgs {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            global::ProtobufMsgs.CanvasObject.Types.Line subBuilder = new global::ProtobufMsgs.CanvasObject.Types.Line();
-            if (objectCase_ == ObjectOneofCase.Line) {
-              subBuilder.MergeFrom(Line);
-            }
-            input.ReadMessage(subBuilder);
-            Line = subBuilder;
-            break;
-          }
-          case 18: {
-            global::ProtobufMsgs.CanvasObject.Types.Rectangle subBuilder = new global::ProtobufMsgs.CanvasObject.Types.Rectangle();
-            if (objectCase_ == ObjectOneofCase.Rectangle) {
-              subBuilder.MergeFrom(Rectangle);
-            }
-            input.ReadMessage(subBuilder);
-            Rectangle = subBuilder;
-            break;
-          }
-          case 26: {
             global::ProtobufMsgs.CanvasObject.Types.Circle subBuilder = new global::ProtobufMsgs.CanvasObject.Types.Circle();
             if (objectCase_ == ObjectOneofCase.Circle) {
               subBuilder.MergeFrom(Circle);
@@ -529,681 +1187,6 @@ namespace ProtobufMsgs {
 
       }
 
-      public sealed partial class Color : pb::IMessage<Color> {
-        private static readonly pb::MessageParser<Color> _parser = new pb::MessageParser<Color>(() => new Color());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<Color> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::ProtobufMsgs.CanvasObject.Descriptor.NestedTypes[1]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Color() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Color(Color other) : this() {
-          r_ = other.r_;
-          g_ = other.g_;
-          b_ = other.b_;
-          a_ = other.a_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Color Clone() {
-          return new Color(this);
-        }
-
-        /// <summary>Field number for the "r" field.</summary>
-        public const int RFieldNumber = 1;
-        private uint r_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint R {
-          get { return r_; }
-          set {
-            r_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "g" field.</summary>
-        public const int GFieldNumber = 2;
-        private uint g_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint G {
-          get { return g_; }
-          set {
-            g_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "b" field.</summary>
-        public const int BFieldNumber = 3;
-        private uint b_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint B {
-          get { return b_; }
-          set {
-            b_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "a" field.</summary>
-        public const int AFieldNumber = 4;
-        private uint a_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint A {
-          get { return a_; }
-          set {
-            a_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as Color);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(Color other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (R != other.R) return false;
-          if (G != other.G) return false;
-          if (B != other.B) return false;
-          if (A != other.A) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (R != 0) hash ^= R.GetHashCode();
-          if (G != 0) hash ^= G.GetHashCode();
-          if (B != 0) hash ^= B.GetHashCode();
-          if (A != 0) hash ^= A.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (R != 0) {
-            output.WriteRawTag(8);
-            output.WriteUInt32(R);
-          }
-          if (G != 0) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(G);
-          }
-          if (B != 0) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(B);
-          }
-          if (A != 0) {
-            output.WriteRawTag(32);
-            output.WriteUInt32(A);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (R != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(R);
-          }
-          if (G != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(G);
-          }
-          if (B != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(B);
-          }
-          if (A != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(A);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(Color other) {
-          if (other == null) {
-            return;
-          }
-          if (other.R != 0) {
-            R = other.R;
-          }
-          if (other.G != 0) {
-            G = other.G;
-          }
-          if (other.B != 0) {
-            B = other.B;
-          }
-          if (other.A != 0) {
-            A = other.A;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                R = input.ReadUInt32();
-                break;
-              }
-              case 16: {
-                G = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                B = input.ReadUInt32();
-                break;
-              }
-              case 32: {
-                A = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      public sealed partial class Line : pb::IMessage<Line> {
-        private static readonly pb::MessageParser<Line> _parser = new pb::MessageParser<Line>(() => new Line());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<Line> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::ProtobufMsgs.CanvasObject.Descriptor.NestedTypes[2]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Line() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Line(Line other) : this() {
-          start_ = other.start_ != null ? other.start_.Clone() : null;
-          end_ = other.end_ != null ? other.end_.Clone() : null;
-          width_ = other.width_;
-          color_ = other.color_ != null ? other.color_.Clone() : null;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Line Clone() {
-          return new Line(this);
-        }
-
-        /// <summary>Field number for the "start" field.</summary>
-        public const int StartFieldNumber = 1;
-        private global::ProtobufMsgs.CanvasObject.Types.Point start_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::ProtobufMsgs.CanvasObject.Types.Point Start {
-          get { return start_; }
-          set {
-            start_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "end" field.</summary>
-        public const int EndFieldNumber = 2;
-        private global::ProtobufMsgs.CanvasObject.Types.Point end_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::ProtobufMsgs.CanvasObject.Types.Point End {
-          get { return end_; }
-          set {
-            end_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "width" field.</summary>
-        public const int WidthFieldNumber = 3;
-        private uint width_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Width {
-          get { return width_; }
-          set {
-            width_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "color" field.</summary>
-        public const int ColorFieldNumber = 4;
-        private global::ProtobufMsgs.CanvasObject.Types.Color color_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::ProtobufMsgs.CanvasObject.Types.Color Color {
-          get { return color_; }
-          set {
-            color_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as Line);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(Line other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (!object.Equals(Start, other.Start)) return false;
-          if (!object.Equals(End, other.End)) return false;
-          if (Width != other.Width) return false;
-          if (!object.Equals(Color, other.Color)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (start_ != null) hash ^= Start.GetHashCode();
-          if (end_ != null) hash ^= End.GetHashCode();
-          if (Width != 0) hash ^= Width.GetHashCode();
-          if (color_ != null) hash ^= Color.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (start_ != null) {
-            output.WriteRawTag(10);
-            output.WriteMessage(Start);
-          }
-          if (end_ != null) {
-            output.WriteRawTag(18);
-            output.WriteMessage(End);
-          }
-          if (Width != 0) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(Width);
-          }
-          if (color_ != null) {
-            output.WriteRawTag(34);
-            output.WriteMessage(Color);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (start_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(Start);
-          }
-          if (end_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(End);
-          }
-          if (Width != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Width);
-          }
-          if (color_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(Color);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(Line other) {
-          if (other == null) {
-            return;
-          }
-          if (other.start_ != null) {
-            if (start_ == null) {
-              Start = new global::ProtobufMsgs.CanvasObject.Types.Point();
-            }
-            Start.MergeFrom(other.Start);
-          }
-          if (other.end_ != null) {
-            if (end_ == null) {
-              End = new global::ProtobufMsgs.CanvasObject.Types.Point();
-            }
-            End.MergeFrom(other.End);
-          }
-          if (other.Width != 0) {
-            Width = other.Width;
-          }
-          if (other.color_ != null) {
-            if (color_ == null) {
-              Color = new global::ProtobufMsgs.CanvasObject.Types.Color();
-            }
-            Color.MergeFrom(other.Color);
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                if (start_ == null) {
-                  Start = new global::ProtobufMsgs.CanvasObject.Types.Point();
-                }
-                input.ReadMessage(Start);
-                break;
-              }
-              case 18: {
-                if (end_ == null) {
-                  End = new global::ProtobufMsgs.CanvasObject.Types.Point();
-                }
-                input.ReadMessage(End);
-                break;
-              }
-              case 24: {
-                Width = input.ReadUInt32();
-                break;
-              }
-              case 34: {
-                if (color_ == null) {
-                  Color = new global::ProtobufMsgs.CanvasObject.Types.Color();
-                }
-                input.ReadMessage(Color);
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      public sealed partial class Rectangle : pb::IMessage<Rectangle> {
-        private static readonly pb::MessageParser<Rectangle> _parser = new pb::MessageParser<Rectangle>(() => new Rectangle());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<Rectangle> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::ProtobufMsgs.CanvasObject.Descriptor.NestedTypes[3]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Rectangle() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Rectangle(Rectangle other) : this() {
-          topLeft_ = other.topLeft_ != null ? other.topLeft_.Clone() : null;
-          bottomRight_ = other.bottomRight_ != null ? other.bottomRight_.Clone() : null;
-          width_ = other.width_;
-          color_ = other.color_ != null ? other.color_.Clone() : null;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Rectangle Clone() {
-          return new Rectangle(this);
-        }
-
-        /// <summary>Field number for the "topLeft" field.</summary>
-        public const int TopLeftFieldNumber = 1;
-        private global::ProtobufMsgs.CanvasObject.Types.Point topLeft_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::ProtobufMsgs.CanvasObject.Types.Point TopLeft {
-          get { return topLeft_; }
-          set {
-            topLeft_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "bottomRight" field.</summary>
-        public const int BottomRightFieldNumber = 2;
-        private global::ProtobufMsgs.CanvasObject.Types.Point bottomRight_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::ProtobufMsgs.CanvasObject.Types.Point BottomRight {
-          get { return bottomRight_; }
-          set {
-            bottomRight_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "width" field.</summary>
-        public const int WidthFieldNumber = 3;
-        private uint width_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Width {
-          get { return width_; }
-          set {
-            width_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "color" field.</summary>
-        public const int ColorFieldNumber = 4;
-        private global::ProtobufMsgs.CanvasObject.Types.Color color_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::ProtobufMsgs.CanvasObject.Types.Color Color {
-          get { return color_; }
-          set {
-            color_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as Rectangle);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(Rectangle other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (!object.Equals(TopLeft, other.TopLeft)) return false;
-          if (!object.Equals(BottomRight, other.BottomRight)) return false;
-          if (Width != other.Width) return false;
-          if (!object.Equals(Color, other.Color)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (topLeft_ != null) hash ^= TopLeft.GetHashCode();
-          if (bottomRight_ != null) hash ^= BottomRight.GetHashCode();
-          if (Width != 0) hash ^= Width.GetHashCode();
-          if (color_ != null) hash ^= Color.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (topLeft_ != null) {
-            output.WriteRawTag(10);
-            output.WriteMessage(TopLeft);
-          }
-          if (bottomRight_ != null) {
-            output.WriteRawTag(18);
-            output.WriteMessage(BottomRight);
-          }
-          if (Width != 0) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(Width);
-          }
-          if (color_ != null) {
-            output.WriteRawTag(34);
-            output.WriteMessage(Color);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (topLeft_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(TopLeft);
-          }
-          if (bottomRight_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(BottomRight);
-          }
-          if (Width != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Width);
-          }
-          if (color_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(Color);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(Rectangle other) {
-          if (other == null) {
-            return;
-          }
-          if (other.topLeft_ != null) {
-            if (topLeft_ == null) {
-              TopLeft = new global::ProtobufMsgs.CanvasObject.Types.Point();
-            }
-            TopLeft.MergeFrom(other.TopLeft);
-          }
-          if (other.bottomRight_ != null) {
-            if (bottomRight_ == null) {
-              BottomRight = new global::ProtobufMsgs.CanvasObject.Types.Point();
-            }
-            BottomRight.MergeFrom(other.BottomRight);
-          }
-          if (other.Width != 0) {
-            Width = other.Width;
-          }
-          if (other.color_ != null) {
-            if (color_ == null) {
-              Color = new global::ProtobufMsgs.CanvasObject.Types.Color();
-            }
-            Color.MergeFrom(other.Color);
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                if (topLeft_ == null) {
-                  TopLeft = new global::ProtobufMsgs.CanvasObject.Types.Point();
-                }
-                input.ReadMessage(TopLeft);
-                break;
-              }
-              case 18: {
-                if (bottomRight_ == null) {
-                  BottomRight = new global::ProtobufMsgs.CanvasObject.Types.Point();
-                }
-                input.ReadMessage(BottomRight);
-                break;
-              }
-              case 24: {
-                Width = input.ReadUInt32();
-                break;
-              }
-              case 34: {
-                if (color_ == null) {
-                  Color = new global::ProtobufMsgs.CanvasObject.Types.Color();
-                }
-                input.ReadMessage(Color);
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
       public sealed partial class Circle : pb::IMessage<Circle> {
         private static readonly pb::MessageParser<Circle> _parser = new pb::MessageParser<Circle>(() => new Circle());
         private pb::UnknownFieldSet _unknownFields;
@@ -1212,7 +1195,7 @@ namespace ProtobufMsgs {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::ProtobufMsgs.CanvasObject.Descriptor.NestedTypes[4]; }
+          get { return global::ProtobufMsgs.CanvasObject.Descriptor.NestedTypes[1]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1232,7 +1215,6 @@ namespace ProtobufMsgs {
           center_ = other.center_ != null ? other.center_.Clone() : null;
           radius_ = other.radius_;
           width_ = other.width_;
-          color_ = other.color_ != null ? other.color_.Clone() : null;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -1274,17 +1256,6 @@ namespace ProtobufMsgs {
           }
         }
 
-        /// <summary>Field number for the "color" field.</summary>
-        public const int ColorFieldNumber = 4;
-        private global::ProtobufMsgs.CanvasObject.Types.Color color_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::ProtobufMsgs.CanvasObject.Types.Color Color {
-          get { return color_; }
-          set {
-            color_ = value;
-          }
-        }
-
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Circle);
@@ -1301,7 +1272,6 @@ namespace ProtobufMsgs {
           if (!object.Equals(Center, other.Center)) return false;
           if (Radius != other.Radius) return false;
           if (Width != other.Width) return false;
-          if (!object.Equals(Color, other.Color)) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -1311,7 +1281,6 @@ namespace ProtobufMsgs {
           if (center_ != null) hash ^= Center.GetHashCode();
           if (Radius != 0) hash ^= Radius.GetHashCode();
           if (Width != 0) hash ^= Width.GetHashCode();
-          if (color_ != null) hash ^= Color.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -1337,10 +1306,6 @@ namespace ProtobufMsgs {
             output.WriteRawTag(24);
             output.WriteUInt32(Width);
           }
-          if (color_ != null) {
-            output.WriteRawTag(34);
-            output.WriteMessage(Color);
-          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -1357,9 +1322,6 @@ namespace ProtobufMsgs {
           }
           if (Width != 0) {
             size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Width);
-          }
-          if (color_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(Color);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -1383,12 +1345,6 @@ namespace ProtobufMsgs {
           }
           if (other.Width != 0) {
             Width = other.Width;
-          }
-          if (other.color_ != null) {
-            if (color_ == null) {
-              Color = new global::ProtobufMsgs.CanvasObject.Types.Color();
-            }
-            Color.MergeFrom(other.Color);
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
@@ -1416,13 +1372,6 @@ namespace ProtobufMsgs {
                 Width = input.ReadUInt32();
                 break;
               }
-              case 34: {
-                if (color_ == null) {
-                  Color = new global::ProtobufMsgs.CanvasObject.Types.Color();
-                }
-                input.ReadMessage(Color);
-                break;
-              }
             }
           }
         }
@@ -1442,7 +1391,7 @@ namespace ProtobufMsgs {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ProtobufMsgs.CameraReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ProtobufMsgs.CameraReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1473,6 +1422,9 @@ namespace ProtobufMsgs {
     /// <summary>Field number for the "width" field.</summary>
     public const int WidthFieldNumber = 1;
     private uint width_;
+    /// <summary>
+    /// The width and height are a legacy feature, they should be the same as the resolution of the camera
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Width {
       get { return width_; }
@@ -1608,852 +1560,6 @@ namespace ProtobufMsgs {
         }
       }
     }
-
-  }
-
-  /// <summary>
-  ///
-  /// The following sensor outputs are specific to the sensor type, bring your own sensor and add your own output here!
-  /// </summary>
-  public sealed partial class CameraSensorOutput : pb::IMessage<CameraSensorOutput> {
-    private static readonly pb::MessageParser<CameraSensorOutput> _parser = new pb::MessageParser<CameraSensorOutput>(() => new CameraSensorOutput());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CameraSensorOutput> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::ProtobufMsgs.CameraReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CameraSensorOutput() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CameraSensorOutput(CameraSensorOutput other) : this() {
-      trajectory_ = other.trajectory_ != null ? other.trajectory_.Clone() : null;
-      debugFrame_ = other.debugFrame_ != null ? other.debugFrame_.Clone() : null;
-      objects_ = other.objects_ != null ? other.objects_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CameraSensorOutput Clone() {
-      return new CameraSensorOutput(this);
-    }
-
-    /// <summary>Field number for the "trajectory" field.</summary>
-    public const int TrajectoryFieldNumber = 1;
-    private global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory trajectory_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory Trajectory {
-      get { return trajectory_; }
-      set {
-        trajectory_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "debug_frame" field.</summary>
-    public const int DebugFrameFieldNumber = 2;
-    private global::ProtobufMsgs.CameraSensorOutput.Types.DebugFrame debugFrame_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::ProtobufMsgs.CameraSensorOutput.Types.DebugFrame DebugFrame {
-      get { return debugFrame_; }
-      set {
-        debugFrame_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "objects" field.</summary>
-    public const int ObjectsFieldNumber = 3;
-    private global::ProtobufMsgs.CameraSensorOutput.Types.Objects objects_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::ProtobufMsgs.CameraSensorOutput.Types.Objects Objects {
-      get { return objects_; }
-      set {
-        objects_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CameraSensorOutput);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CameraSensorOutput other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Trajectory, other.Trajectory)) return false;
-      if (!object.Equals(DebugFrame, other.DebugFrame)) return false;
-      if (!object.Equals(Objects, other.Objects)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (trajectory_ != null) hash ^= Trajectory.GetHashCode();
-      if (debugFrame_ != null) hash ^= DebugFrame.GetHashCode();
-      if (objects_ != null) hash ^= Objects.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (trajectory_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Trajectory);
-      }
-      if (debugFrame_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(DebugFrame);
-      }
-      if (objects_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Objects);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (trajectory_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Trajectory);
-      }
-      if (debugFrame_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DebugFrame);
-      }
-      if (objects_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Objects);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CameraSensorOutput other) {
-      if (other == null) {
-        return;
-      }
-      if (other.trajectory_ != null) {
-        if (trajectory_ == null) {
-          Trajectory = new global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory();
-        }
-        Trajectory.MergeFrom(other.Trajectory);
-      }
-      if (other.debugFrame_ != null) {
-        if (debugFrame_ == null) {
-          DebugFrame = new global::ProtobufMsgs.CameraSensorOutput.Types.DebugFrame();
-        }
-        DebugFrame.MergeFrom(other.DebugFrame);
-      }
-      if (other.objects_ != null) {
-        if (objects_ == null) {
-          Objects = new global::ProtobufMsgs.CameraSensorOutput.Types.Objects();
-        }
-        Objects.MergeFrom(other.Objects);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (trajectory_ == null) {
-              Trajectory = new global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory();
-            }
-            input.ReadMessage(Trajectory);
-            break;
-          }
-          case 18: {
-            if (debugFrame_ == null) {
-              DebugFrame = new global::ProtobufMsgs.CameraSensorOutput.Types.DebugFrame();
-            }
-            input.ReadMessage(DebugFrame);
-            break;
-          }
-          case 26: {
-            if (objects_ == null) {
-              Objects = new global::ProtobufMsgs.CameraSensorOutput.Types.Objects();
-            }
-            input.ReadMessage(Objects);
-            break;
-          }
-        }
-      }
-    }
-
-    #region Nested types
-    /// <summary>Container for nested types declared in the CameraSensorOutput message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static partial class Types {
-      /// <summary>
-      /// Defined by the Path Planner
-      /// </summary>
-      public sealed partial class Trajectory : pb::IMessage<Trajectory> {
-        private static readonly pb::MessageParser<Trajectory> _parser = new pb::MessageParser<Trajectory>(() => new Trajectory());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<Trajectory> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::ProtobufMsgs.CameraSensorOutput.Descriptor.NestedTypes[0]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Trajectory() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Trajectory(Trajectory other) : this() {
-          points_ = other.points_.Clone();
-          width_ = other.width_;
-          height_ = other.height_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Trajectory Clone() {
-          return new Trajectory(this);
-        }
-
-        /// <summary>Field number for the "points" field.</summary>
-        public const int PointsFieldNumber = 1;
-        private static readonly pb::FieldCodec<global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory.Types.Point> _repeated_points_codec
-            = pb::FieldCodec.ForMessage(10, global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory.Types.Point.Parser);
-        private readonly pbc::RepeatedField<global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory.Types.Point> points_ = new pbc::RepeatedField<global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory.Types.Point>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory.Types.Point> Points {
-          get { return points_; }
-        }
-
-        /// <summary>Field number for the "width" field.</summary>
-        public const int WidthFieldNumber = 2;
-        private uint width_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Width {
-          get { return width_; }
-          set {
-            width_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "height" field.</summary>
-        public const int HeightFieldNumber = 3;
-        private uint height_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Height {
-          get { return height_; }
-          set {
-            height_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as Trajectory);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(Trajectory other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if(!points_.Equals(other.points_)) return false;
-          if (Width != other.Width) return false;
-          if (Height != other.Height) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          hash ^= points_.GetHashCode();
-          if (Width != 0) hash ^= Width.GetHashCode();
-          if (Height != 0) hash ^= Height.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          points_.WriteTo(output, _repeated_points_codec);
-          if (Width != 0) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(Width);
-          }
-          if (Height != 0) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(Height);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          size += points_.CalculateSize(_repeated_points_codec);
-          if (Width != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Width);
-          }
-          if (Height != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Height);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(Trajectory other) {
-          if (other == null) {
-            return;
-          }
-          points_.Add(other.points_);
-          if (other.Width != 0) {
-            Width = other.Width;
-          }
-          if (other.Height != 0) {
-            Height = other.Height;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                points_.AddEntriesFrom(input, _repeated_points_codec);
-                break;
-              }
-              case 16: {
-                Width = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                Height = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        }
-
-        #region Nested types
-        /// <summary>Container for nested types declared in the Trajectory message type.</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static partial class Types {
-          public sealed partial class Point : pb::IMessage<Point> {
-            private static readonly pb::MessageParser<Point> _parser = new pb::MessageParser<Point>(() => new Point());
-            private pb::UnknownFieldSet _unknownFields;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public static pb::MessageParser<Point> Parser { get { return _parser; } }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public static pbr::MessageDescriptor Descriptor {
-              get { return global::ProtobufMsgs.CameraSensorOutput.Types.Trajectory.Descriptor.NestedTypes[0]; }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            pbr::MessageDescriptor pb::IMessage.Descriptor {
-              get { return Descriptor; }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public Point() {
-              OnConstruction();
-            }
-
-            partial void OnConstruction();
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public Point(Point other) : this() {
-              x_ = other.x_;
-              y_ = other.y_;
-              _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public Point Clone() {
-              return new Point(this);
-            }
-
-            /// <summary>Field number for the "x" field.</summary>
-            public const int XFieldNumber = 1;
-            private int x_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public int X {
-              get { return x_; }
-              set {
-                x_ = value;
-              }
-            }
-
-            /// <summary>Field number for the "y" field.</summary>
-            public const int YFieldNumber = 2;
-            private int y_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public int Y {
-              get { return y_; }
-              set {
-                y_ = value;
-              }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public override bool Equals(object other) {
-              return Equals(other as Point);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public bool Equals(Point other) {
-              if (ReferenceEquals(other, null)) {
-                return false;
-              }
-              if (ReferenceEquals(other, this)) {
-                return true;
-              }
-              if (X != other.X) return false;
-              if (Y != other.Y) return false;
-              return Equals(_unknownFields, other._unknownFields);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public override int GetHashCode() {
-              int hash = 1;
-              if (X != 0) hash ^= X.GetHashCode();
-              if (Y != 0) hash ^= Y.GetHashCode();
-              if (_unknownFields != null) {
-                hash ^= _unknownFields.GetHashCode();
-              }
-              return hash;
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public override string ToString() {
-              return pb::JsonFormatter.ToDiagnosticString(this);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public void WriteTo(pb::CodedOutputStream output) {
-              if (X != 0) {
-                output.WriteRawTag(8);
-                output.WriteInt32(X);
-              }
-              if (Y != 0) {
-                output.WriteRawTag(16);
-                output.WriteInt32(Y);
-              }
-              if (_unknownFields != null) {
-                _unknownFields.WriteTo(output);
-              }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public int CalculateSize() {
-              int size = 0;
-              if (X != 0) {
-                size += 1 + pb::CodedOutputStream.ComputeInt32Size(X);
-              }
-              if (Y != 0) {
-                size += 1 + pb::CodedOutputStream.ComputeInt32Size(Y);
-              }
-              if (_unknownFields != null) {
-                size += _unknownFields.CalculateSize();
-              }
-              return size;
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public void MergeFrom(Point other) {
-              if (other == null) {
-                return;
-              }
-              if (other.X != 0) {
-                X = other.X;
-              }
-              if (other.Y != 0) {
-                Y = other.Y;
-              }
-              _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public void MergeFrom(pb::CodedInputStream input) {
-              uint tag;
-              while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
-                  default:
-                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                    break;
-                  case 8: {
-                    X = input.ReadInt32();
-                    break;
-                  }
-                  case 16: {
-                    Y = input.ReadInt32();
-                    break;
-                  }
-                }
-              }
-            }
-
-          }
-
-        }
-        #endregion
-
-      }
-
-      public sealed partial class DebugFrame : pb::IMessage<DebugFrame> {
-        private static readonly pb::MessageParser<DebugFrame> _parser = new pb::MessageParser<DebugFrame>(() => new DebugFrame());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<DebugFrame> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::ProtobufMsgs.CameraSensorOutput.Descriptor.NestedTypes[1]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public DebugFrame() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public DebugFrame(DebugFrame other) : this() {
-          jpeg_ = other.jpeg_;
-          canvas_ = other.canvas_ != null ? other.canvas_.Clone() : null;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public DebugFrame Clone() {
-          return new DebugFrame(this);
-        }
-
-        /// <summary>Field number for the "jpeg" field.</summary>
-        public const int JpegFieldNumber = 1;
-        private pb::ByteString jpeg_ = pb::ByteString.Empty;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pb::ByteString Jpeg {
-          get { return jpeg_; }
-          set {
-            jpeg_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-          }
-        }
-
-        /// <summary>Field number for the "canvas" field.</summary>
-        public const int CanvasFieldNumber = 5;
-        private global::ProtobufMsgs.Canvas canvas_;
-        /// <summary>
-        /// if image livestreaming is disabled, or imaging module wants to draw additional information on the image, it can be done here
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::ProtobufMsgs.Canvas Canvas {
-          get { return canvas_; }
-          set {
-            canvas_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as DebugFrame);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(DebugFrame other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (Jpeg != other.Jpeg) return false;
-          if (!object.Equals(Canvas, other.Canvas)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (Jpeg.Length != 0) hash ^= Jpeg.GetHashCode();
-          if (canvas_ != null) hash ^= Canvas.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (Jpeg.Length != 0) {
-            output.WriteRawTag(10);
-            output.WriteBytes(Jpeg);
-          }
-          if (canvas_ != null) {
-            output.WriteRawTag(42);
-            output.WriteMessage(Canvas);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (Jpeg.Length != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeBytesSize(Jpeg);
-          }
-          if (canvas_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(Canvas);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(DebugFrame other) {
-          if (other == null) {
-            return;
-          }
-          if (other.Jpeg.Length != 0) {
-            Jpeg = other.Jpeg;
-          }
-          if (other.canvas_ != null) {
-            if (canvas_ == null) {
-              Canvas = new global::ProtobufMsgs.Canvas();
-            }
-            Canvas.MergeFrom(other.Canvas);
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                Jpeg = input.ReadBytes();
-                break;
-              }
-              case 42: {
-                if (canvas_ == null) {
-                  Canvas = new global::ProtobufMsgs.Canvas();
-                }
-                input.ReadMessage(Canvas);
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      public sealed partial class Objects : pb::IMessage<Objects> {
-        private static readonly pb::MessageParser<Objects> _parser = new pb::MessageParser<Objects>(() => new Objects());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<Objects> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::ProtobufMsgs.CameraSensorOutput.Descriptor.NestedTypes[2]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Objects() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Objects(Objects other) : this() {
-          items_ = other.items_.Clone();
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Objects Clone() {
-          return new Objects(this);
-        }
-
-        /// <summary>Field number for the "items" field.</summary>
-        public const int ItemsFieldNumber = 1;
-        private static readonly pb::FieldCodec<global::ProtobufMsgs.DetectedObjects> _repeated_items_codec
-            = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::ProtobufMsgs.DetectedObjects) x);
-        private readonly pbc::RepeatedField<global::ProtobufMsgs.DetectedObjects> items_ = new pbc::RepeatedField<global::ProtobufMsgs.DetectedObjects>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<global::ProtobufMsgs.DetectedObjects> Items {
-          get { return items_; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as Objects);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(Objects other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if(!items_.Equals(other.items_)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          hash ^= items_.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          items_.WriteTo(output, _repeated_items_codec);
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          size += items_.CalculateSize(_repeated_items_codec);
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(Objects other) {
-          if (other == null) {
-            return;
-          }
-          items_.Add(other.items_);
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10:
-              case 8: {
-                items_.AddEntriesFrom(input, _repeated_items_codec);
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-    }
-    #endregion
 
   }
 
