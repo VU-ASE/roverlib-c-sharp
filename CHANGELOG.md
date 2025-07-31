@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/VU-ASE/roverlib-c-sharp/compare/v1.0.2...v2.0.0) (2025-07-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to rovercom V2
+
+### Features
+
+* update to rovercom V2 ([2192229](https://github.com/VU-ASE/roverlib-c-sharp/commit/219222915ed73027dbfe01bac47f6eb2391b869c))
+
+
+### Bug Fixes
+
+* tests failing due to removed RpmOuput ([3389f8f](https://github.com/VU-ASE/roverlib-c-sharp/commit/3389f8fa17c43125756e0c3f81eb1997c116f025))
+
 ## [1.0.2](https://github.com/VU-ASE/roverlib-c-sharp/compare/v1.0.1...v1.0.2) (2025-05-23)
 
 
